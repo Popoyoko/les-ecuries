@@ -1,0 +1,33 @@
+.Horraires{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    width: 295px;
+    height: 28px;
+
+    flex: none;
+    order: 7;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.Horraires > p {
+    width: 295px;
+    height: 28px;
+
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+
+    color: #F3F2F7;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

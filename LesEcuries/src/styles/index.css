@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: 32px;
+  position: relative;
+  width: 375px;
+  height: 2416.13px;
+  background: #08070C;
+}

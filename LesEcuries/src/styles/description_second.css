@@ -1,0 +1,26 @@
+.Description_Second{
+    width: 311px;
+height: 140px;
+
+/* Paragraph */
+
+font-family: 'Merriweather';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+/* or 175% */
+
+
+/* Light */
+
+color: #F3F2F7;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+}
