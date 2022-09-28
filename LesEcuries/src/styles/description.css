@@ -5,8 +5,6 @@ align-items: flex-start;
 padding: 0px;
 gap: 10px;
 
-width: 311px;
-height: 336px;
 
 flex: none;
 order: 2;
@@ -15,8 +13,6 @@ flex-grow: 0;
 }
 
 .Description > p {
-    width: 311px;
-height: 336px;
 
 font-family: 'Merriweather';
 font-style: normal;
@@ -30,4 +26,15 @@ flex: none;
 order: 0;
 align-self: stretch;
 flex-grow: 0;
+}
+
+.Description_Second{
+font-family: 'Merriweather';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+
+color: #F3F2F7;
+order: 4;
 }

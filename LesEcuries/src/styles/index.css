@@ -7,6 +7,20 @@
   gap: 32px;
   position: relative;
   width: 375px;
-  height: 2416.13px;
+  /* height: 2416.13px; */
   background: #08070C;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+h1{
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Fjalla One', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap%27');
 }

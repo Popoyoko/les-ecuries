@@ -1,4 +1,4 @@
-import '../styles/description_second.css'
+import '../styles/description.css'
 
 
 function Description_Second() {

@@ -6,7 +6,7 @@ function Frame_1() {
 
 	return (
 	    <div className="Frame_1">
-            <h2>Suivez-nous</h2>
+            <p>Suivez-nous</p>
             <div className='Socials'>
                 <div className='Social'>
                     <img src={vector_2_socials} className="image_2_socials" alt="logo_facebook" />

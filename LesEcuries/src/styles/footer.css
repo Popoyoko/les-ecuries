@@ -5,12 +5,9 @@ footer{
     padding: 0px;
     gap: 16px;
 
-    width: 252px;
-    height: 70px;
-
     flex: none;
     order: 9;
-    align-self: stretch;
+
 }
 
 footer > img {
@@ -33,9 +30,6 @@ footer > img {
 }
 
 .Presbloc_footer > h1 {
-    width: 137px;
-    height: 40px;
-
     font-family: 'Fjalla One';
     font-style: normal;
     font-weight: 400;

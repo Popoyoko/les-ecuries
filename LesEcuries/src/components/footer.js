@@ -4,7 +4,7 @@ import image_1 from'../assets/image_1.png';
 function Footer() {
 
 	return (
-        <footer className="App-Footer">
+        <footer>
         <img src={image_1} className="App-logo" alt="logo" />
         <div className='Presbloc_footer'>
           <h1>Les Écuries</h1>
