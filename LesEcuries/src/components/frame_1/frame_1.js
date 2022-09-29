@@ -1,4 +1,4 @@
-import '../styles/frame_1.css'
+import './frame_1.css'
 import vector_2_socials from'../assets/Vector_2.png';
 import image_3_socials from'../assets/Vector_3.png';
 

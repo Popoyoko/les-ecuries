@@ -1,4 +1,4 @@
-import '../styles/description.css'
+import './description.css'
 
 
 function Description() {
