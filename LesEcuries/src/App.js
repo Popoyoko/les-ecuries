@@ -1,5 +1,3 @@
-import image_1 from'./assets/image_1.png';
-
 import Header from './components/header/header';
 import Ctas from './components/ctas/ctas';
 import Description from './components/description/description';
