@@ -1,4 +1,4 @@
-.Slider{
+.slider{
     display: flex;
 align-items: flex-start;
 padding: 0px;
@@ -14,9 +14,8 @@ flex-grow: 0;
 }
 
 .image_3_slider{
-    width: 320px;
     height: 320px;
-    
+
     flex: none;
     order: 0;
     flex-grow: 0;

@@ -1,16 +1,19 @@
-import '../styles/map.css'
-
+import "../styles/map.css";
 
 function Map() {
-
-	return (
-	    <div className="Map">
-        <p>
-        Ouvert du mardi au samedi de 18h à 1h30 (dimanche et lundi selon programmation)
-        </p>
-      </div>
-
-	)
+  return (
+    <div className="map">
+      {/* <iframe
+        width="600"
+        height="450"
+        style="border:0"
+        loading="lazy" allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+            &q=Space+Needle,Seattle+WA">
+        </iframe> */}
+    </div>
+  );
 }
 
-export default Map
+export default Map;
