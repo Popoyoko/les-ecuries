@@ -1,0 +1,70 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    flex: none;
+    order: 9;
+
+}
+
+footer > img {
+    width: 48px;
+    height: 39px;
+
+}
+
+.Presbloc_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 188px;
+    height: 70px;
+
+    order: 1;
+}
+
+.Presbloc_footer > h1 {
+    font-family: 'Fjalla One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+
+    color: #FFFFFF;
+}
+
+.Presbloc_footer > .adresse{
+    width: 188px;
+    height: 15px;
+
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #F3F2F7;
+
+}
+
+.Presbloc_footer > .site{
+    width: 154px;
+    height: 15px;
+    
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    text-decoration-line: underline;
+
+    color: #8470FF;
+
+}
