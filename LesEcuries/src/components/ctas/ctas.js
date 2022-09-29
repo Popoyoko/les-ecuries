@@ -1,4 +1,4 @@
-import '../styles/ctas.css'
+import './ctas.css'
 import vector from'../assets/Vector.png';
 
 function Ctas() {

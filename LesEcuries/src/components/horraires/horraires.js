@@ -1,10 +1,10 @@
-import '../styles/map.css'
+import './horraires.css'
 
 
-function Map() {
+function Horraires() {
 
 	return (
-	    <div className="Map">
+	    <div className="Horraires">
         <p>
         Ouvert du mardi au samedi de 18h à 1h30 (dimanche et lundi selon programmation)
         </p>
@@ -13,4 +13,4 @@ function Map() {
 	)
 }
 
-export default Map
+export default Horraires

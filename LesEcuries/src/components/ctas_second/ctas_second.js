@@ -1,4 +1,4 @@
-import '../styles/ctas.css'
+import './ctas_second.css'
 import vector_1 from'../assets/Vector_1.png';
 import vector_2 from'../assets/Vector_2.png';
 

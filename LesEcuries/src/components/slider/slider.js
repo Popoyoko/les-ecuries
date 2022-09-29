@@ -1,4 +1,5 @@
-import '../styles/slider.css'
+import './slider.css'
+
 import image_3_slider from'../assets/image_3.png';
 import image_4_slider from'../assets/image_4.png';
 import image_5_slider from'../assets/image_5.png';
