@@ -8,15 +8,15 @@ import Map from './components/map/map';
 import Horraires from './components/horraires/horraires';
 import Frame_1 from './components/frame_1/frame_1';
 import Footer from './components/footer/footer';
-
+import PopIn from './components/pop-in';
 
 function App() {
 
   return (
     <div className="App">
-
+      
       <Header></Header>
-      <Ctas></Ctas>
+      <PopIn></PopIn>
       <Description></Description>
       <Slider></Slider>
       <Description_Second></Description_Second>
@@ -25,6 +25,7 @@ function App() {
       <Horraires></Horraires>
       <Frame_1></Frame_1>
       <Footer></Footer>
+      <Ctas></Ctas>
 
     </div>
   );
