@@ -1,10 +1,10 @@
-import './description.css'
+import './index.css'
 
 
 function Description() {
 
 	return (
-	    <div className="Description">
+	    <div className="description">
         <p>
           Autrefois bureau de poste, lieu secret de fête du Paris mondain dans les années 70, restaurant médiéval dans les années 90, 
           l’espace atypique des Ecuries n’a jamais cessé de renaitre et d’évoluer depuis la construction de ces murs. Réouvert en septembre 2014, 

@@ -1,4 +1,4 @@
-.Frame_1{
+.socials{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +13,7 @@
     flex-grow: 0;
 }
 
-.Frame_1 > p {
+.socials > p {
     font-family: 'Fjalla One';
     font-style: normal;
     font-weight: 400;
@@ -27,7 +27,7 @@
     flex-grow: 0;
 }
 
-.Socials {
+.container-reseaux {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -37,7 +37,8 @@
 
 .Social {
 box-sizing: border-box;
-align-items: center;
+display: flex;
+justify-content: center;
 padding: 8px;
 
 width: 40px;

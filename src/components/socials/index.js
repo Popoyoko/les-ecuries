@@ -1,13 +1,13 @@
-import './frame_1.css'
+import './index.css'
 import vector_2_socials from'../assets/Vector_2.png';
 import image_3_socials from'../assets/Vector_3.png';
 
-function Frame_1() {
+function Socials() {
 
 	return (
-	    <div className="Frame_1">
+	    <div className="socials">
             <p>Suivez-nous</p>
-            <div className='Socials'>
+            <div className='container-reseaux'>
                 <div className='Social'>
                     <img src={vector_2_socials} className="image_2_socials" alt="logo_facebook" />
                 </div>
@@ -19,4 +19,4 @@ function Frame_1() {
 	)
 }
 
-export default Frame_1
+export default Socials

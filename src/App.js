@@ -1,13 +1,13 @@
-import Header from './components/header/header';
-import Ctas from './components/ctas/ctas';
-import Description from './components/description/description';
-import Slider from './components/slider/slider';
-import Description_Second from './components/description_second/description_second';
-import Ctas_Second from './components/ctas_second/ctas_second';
-import Map from './components/map/map';
-import Horraires from './components/horraires/horraires';
-import Frame_1 from './components/frame_1/frame_1';
-import Footer from './components/footer/footer';
+import Header from './components/header';
+import Boutton from './components/boutton';
+import Description from './components/description';
+import Slider from './components/slider';
+import Description_Promotion from './components/description_promotion';
+import Boutton_Information from './components/boutton_information';
+import Map from './components/map';
+import Horraires from './components/horraires';
+import Socials from './components/socials';
+import Footer from './components/footer';
 
 
 function App() {
@@ -16,14 +16,14 @@ function App() {
     <div className="App">
 
       <Header></Header>
-      <Ctas></Ctas>
+      <Boutton></Boutton>
       <Description></Description>
       <Slider></Slider>
-      <Description_Second></Description_Second>
-      <Ctas_Second></Ctas_Second>
+      <Description_Promotion></Description_Promotion>
+      <Boutton_Information></Boutton_Information>
       <Map></Map>
       <Horraires></Horraires>
-      <Frame_1></Frame_1>
+      <Socials></Socials>
       <Footer></Footer>
 
     </div>
