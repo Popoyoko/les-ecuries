@@ -1,11 +1,11 @@
-import './ctas_second.css'
+import './index.css'
 import vector_1 from'../assets/Vector_1.png';
 import vector_2 from'../assets/Vector_2.png';
 
-function Ctas_Second() {
+function boutton_information() {
 
 	return (
-	    <div className="Ctas_second">
+	    <div className="boutton_information">
         <button className='btn_fond_n' label="Notre carte">
            <p>Notre carte</p>
            <img src={vector_1} className="vector_1" alt="logo_Notre carte" />
@@ -19,4 +19,4 @@ function Ctas_Second() {
 	)
 }
 
-export default Ctas_Second
+export default boutton_information

@@ -1,10 +1,10 @@
-import './ctas.css'
+import './index.css'
 import vector from'../assets/Vector.png';
 
-function Ctas() {
+function Boutton() {
 
 	return (
-	    <div className="Ctas">
+	    <div className="boutton">
         <button className='btn_fond_b' label="Réservation en ligne">
            <p>Réservation en ligne</p>
         </button>
@@ -17,4 +17,4 @@ function Ctas() {
 	)
 }
 
-export default Ctas
+export default Boutton

@@ -16,7 +16,7 @@ footer > img {
 
 }
 
-.Presbloc_footer {
+.presbloc_footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +29,7 @@ footer > img {
     order: 1;
 }
 
-.Presbloc_footer > h1 {
+.presbloc_footer > h1 {
     font-family: 'Fjalla One';
     font-style: normal;
     font-weight: 400;
@@ -39,29 +39,25 @@ footer > img {
     color: #FFFFFF;
 }
 
-.Presbloc_footer > .adresse{
-    width: 188px;
-    height: 15px;
-
+.presbloc_footer > * {
     font-family: 'Merriweather';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+}
+
+.presbloc_footer > #adresse{
+    width: 188px;
+    height: 15px;
 
     color: #F3F2F7;
 
 }
 
-.Presbloc_footer > .site{
+.presbloc_footer > #site{
     width: 154px;
     height: 15px;
-    
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
 
     text-decoration-line: underline;
 
