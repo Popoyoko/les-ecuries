@@ -25,10 +25,7 @@ header{
     flex-grow: 0;
 }
 
-#les-ecuries {
-
-    
-    font-family: 'Fjalla One';
+.LesEcuries {
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
