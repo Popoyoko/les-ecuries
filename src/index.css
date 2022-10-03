@@ -12,6 +12,7 @@ body{
   /* height: 2416.13px; */
   background: #08070C;
   font-family: 'Fjalla One', sans-serif;
+  z-index: 1;
 }
 
 h1{
