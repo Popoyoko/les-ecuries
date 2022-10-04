@@ -40,6 +40,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 25px;
+
 }
 
 .btn_fond_b > p{
@@ -49,4 +50,12 @@ line-height: 25px;
 .btn_fond_n > p{
 
     color: #F3F2F7;
+}
+
+@media screen and (min-width: 700px) {
+    .boutton{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
