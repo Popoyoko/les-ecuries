@@ -9,10 +9,14 @@ function Frame_1() {
             <p>Suivez-nous</p>
             <div className='Socials'>
                 <div className='Social'>
+                    <a href='https://www.facebook.com/lesecuriesbar/'>
                     <img src={vector_2_socials} className="image_2_socials" alt="logo_facebook" />
+                    </a>
                 </div>
                 <div className='Social'>
+                    <a href='https://www.instagram.com/bar_les_ecuries_paris/'>
                     <img src={image_3_socials} className="image_3_socials" alt="logo_instagram" />
+                    </a>
                 </div>
             </div>
       </div>
