@@ -36,9 +36,6 @@ p {
   font-family: "Fjalla One", sans-serif;
 }
 
-.container-top-desktop {
-}
-
 .container-mid-desktop {
   display: flex;
   flex-direction: row;
