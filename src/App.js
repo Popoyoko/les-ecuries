@@ -1,4 +1,4 @@
-import useMatchMedia from "react-use-match-media";
+import useMatchMedia from "./hooks/useMatchMedia"
 
 import Header from "./components/header";
 import Boutton from "./components/boutton";
@@ -14,7 +14,6 @@ import Photo_Grid from "./components/photo_grid";
 
 function App() {
   const isWideViewport = useMatchMedia("(max-width:700px)");
-
   return (
     <div>
       {isWideViewport ? (
