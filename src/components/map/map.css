@@ -16,3 +16,12 @@
   margin-left: -32px;
   border: none;
 }
+
+
+@media  screen and (min-width: 700px) {
+  .Map > iframe {
+    position: relative;
+    margin: 0;
+  }
+  
+}
