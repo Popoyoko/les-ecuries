@@ -16,7 +16,7 @@ function PopIn() {
       </div>
       <div className="mail-container">
         <p className="text-pop-in">Nous répondons également à toutes vos questions par mail :</p>
-        <p id="mail">lesecuriesbar@gmail.com</p>
+        <a href="mailto:lesecuriesbar@gmail.com">lesecuriesbar@gmail.com</a>
       </div>
     </div>
   );
