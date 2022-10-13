@@ -1,10 +1,14 @@
-.description_promotion{
+:root{
+    --white_site: #F3F2F7;
+}
+
+.Description_Second{
     font-family: 'Merriweather';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
     
-    color: #F3F2F7;
+    color: var(--white_site);
     order: 4;
     }

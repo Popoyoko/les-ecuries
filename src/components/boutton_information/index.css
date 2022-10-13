@@ -1,8 +1,12 @@
+:root{
+    --div_gap: 16px;
+}
+
 .boutton_information{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: var(--div_gap);
 
     order: 5;
     align-self: stretch;
@@ -14,7 +18,7 @@
         flex-direction: row;
         align-items: center;
         padding: 0px;
-        gap: 16px;
+        gap: var(--div_gap);
         
 
     }
