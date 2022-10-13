@@ -10,7 +10,7 @@ function PopIn() {
           <p>Réservation en ligne</p>
         </button>
         <button className="btn_fond_n" label="Contactez-nous">
-          <p>07 64 54 09 74</p>
+          <a href="tel:+33764540974">07 64 54 09 74</a>
           <img src={vector} className="vector" alt="logo_contactez-nous" />
         </button>
       </div>
