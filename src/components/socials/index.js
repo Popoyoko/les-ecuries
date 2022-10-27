@@ -33,21 +33,25 @@ function Socials() {
           <div className="split-socials">
             <p id="plus-de-photos">Plus de photos</p>
             <div className="social">
+              <a href="https://www.facebook.com/lesecuriesbar/">
               <img
                 src={vector_2_socials}
                 className="image_2_socials"
                 alt="logo_facebook"
               />
+              </a>
             </div>
           </div>
           <div className="split-socials">
             <p>Suivez-nous</p>
             <div className="social">
+              <a href="https://www.instagram.com/bar_les_ecuries_paris/">
               <img
                 src={image_3_socials}
                 className="image_3_socials"
                 alt="logo_instagram"
               />
+              </a>
             </div>
           </div>
         </div>
