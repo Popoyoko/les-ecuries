@@ -1,4 +1,8 @@
-.horraires{
+:root{
+    --white_site: #F3F2F7;
+}
+
+.Horraires{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -16,5 +20,5 @@
     font-size: 12px;
     line-height: 15px;
 
-    color: #F3F2F7;
+    color: var(--white_site);
 }

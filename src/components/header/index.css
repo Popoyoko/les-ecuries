@@ -1,3 +1,8 @@
+:root{
+    --white_site: #F3F2F7;
+    --flex_grow_none: 0;
+}
+
 header{
     display: flex;
     flex-direction: column;
@@ -22,7 +27,7 @@ header{
     
     flex: none;
     order: 1;
-    flex-grow: 0;
+    flex-grow: var(--flex_grow_none);
 }
 
 #les-ecuries {
@@ -31,11 +36,11 @@ header{
     font-size: 32px;
     line-height: 40px;
     
-    color: #FFFFFF;
+    color: white;
     
     flex: none;
     order: 0;
-    flex-grow: 0;
+    flex-grow: var(--flex_grow_none);
 }
 
 .place {
@@ -46,9 +51,9 @@ header{
     font-size: 16px;
     line-height: 28px;
 
-    color: #F3F2F7;
+    color: var(--white_site);
     
     flex: none;
     order: 1;
-    flex-grow: 0;
+    flex-grow: var(--flex_grow_none);
     }

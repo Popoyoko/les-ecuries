@@ -1,9 +1,16 @@
-.boutton{
+:root{
+    --white_site: #F3F2F7;
+    --black_site: #08070C;
+    --button_gap: 10px;
+    --div_gap: 16px;
+}
+
+.Ctas{
 display: flex;
 flex-direction: column;
 align-items: center;
 padding: 0px;
-gap: 16px;
+gap: var(--div_gap);
 
 flex: none;
 order: 1;
@@ -17,20 +24,20 @@ button{
     justify-content: center;
     align-items: center;
     padding: 16px;
-    gap: 10px;
+    gap: var(--button_gap);
 
     align-self: stretch;
     flex-grow: 0;
-    background-color: #08070C;
+    background-color: var(--black_site);
 }
 
 .btn_fond_b{
-    background: #F3F2F7;
+    background: var(--white_site);
 }
 
 .btn_fond_n{
     box-sizing: border-box;
-    border: 2px solid #F3F2F7;
+    border: 2px solid var(--white_site);
 }
 
 button > p {
@@ -44,12 +51,12 @@ line-height: 25px;
 }
 
 .btn_fond_b > p{
-    color: #08070C;
+    color: var(--black_site);
 }
 
 .btn_fond_n > p{
 
-    color: #F3F2F7;
+    color: var(--white_site);
 }
 
 @media screen and (min-width: 700px) {
