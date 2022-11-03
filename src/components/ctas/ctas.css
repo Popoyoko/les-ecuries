@@ -1,0 +1,58 @@
+.Ctas{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: stretch;
+padding: 0;
+gap: 16px;
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+
+    align-self: stretch;
+    flex-grow: 0;
+    background-color: #08070C;
+}
+
+.btn_fond_b{
+    background: #F3F2F7;
+    border: 2px solid #F3F2F7;
+}
+
+.btn_fond_n{
+    box-sizing: border-box;
+    border: 2px solid #F3F2F7;
+}
+
+button > p {
+height: 25px;
+font-family: 'Fjalla One';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+}
+
+.btn_fond_b > p{
+    color: #08070C;
+}
+
+.btn_fond_n > p{
+
+    color: #F3F2F7;
+}
+
+.button-link {
+    text-decoration: none;
+}

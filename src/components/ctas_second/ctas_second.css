@@ -1,0 +1,13 @@
+.Ctas_second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    order: 5;
+    align-self: stretch;
+}
+
+.button-link {
+    text-decoration: none;
+}
