@@ -1,0 +1,25 @@
+:root{
+    --div_gap: 16px;
+}
+
+.boutton_information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--div_gap);
+
+    order: 5;
+    align-self: stretch;
+}
+
+@media screen and (min-width: 700px) {
+    .boutton_information{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: var(--div_gap);
+        
+
+    }
+}
