@@ -21,8 +21,8 @@ function PopIn() {
         </div>
 
         <div className="navigation">
-          <button><img src={arrow_left} alt="arrow_left" /></button>
-          <button><img src={arrow_right} alt="arrow_right" /></button>
+          <button className="btn_fond_b"><img src={arrow_left} alt="arrow_left" /></button>
+          <button className="btn_fond_b"><img src={arrow_right} alt="arrow_right" /></button>
         </div>
       </div>
     </div>
