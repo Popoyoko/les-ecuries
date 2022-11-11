@@ -1,16 +1,16 @@
 import './index.css'
 
-import image_3_slider from'../../assets/image_3.png';
-import image_4_slider from'../../assets/image_4.png';
-import image_5_slider from'../../assets/image_5.png';
+import picture_burger from'../../assets/picture-burger.png';
+import picture_dj from'../../assets/picture-dj.png';
+import picture_coktail from'../../assets/picture-coktail.png';
 
 function Slider() {
 
 	return (
 	    <div className="slider">
-        <img src={image_3_slider} alt="image_slider" />
-        <img src={image_4_slider} alt="image_slider" />
-        <img src={image_5_slider} alt="image_slider" />
+        <img src={picture_burger} alt="image_slider" />
+        <img src={picture_dj} alt="image_slider" />
+        <img src={picture_coktail} alt="image_slider" />
       </div>
 	)
 }
