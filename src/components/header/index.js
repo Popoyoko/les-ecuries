@@ -1,5 +1,5 @@
 import './index.css'
-import image_1 from'../assets/image_1.png';
+import image_1 from'../../assets/image_1.png';
 
 function Header() {
 

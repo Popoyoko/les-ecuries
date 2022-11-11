@@ -1,6 +1,6 @@
 import "./index.css";
-import vector_2_socials from "../assets/Vector_2.png";
-import image_3_socials from "../assets/Vector_3.png";
+import vector_2_socials from "../../assets/Vector_2.png";
+import image_3_socials from "../../assets/Vector_3.png";
 import useMatchMedia from "react-use-match-media";
 
 function Socials() {
