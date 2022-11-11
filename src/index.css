@@ -1,83 +1,18 @@
 body {
   margin: 0;
-}
-.App {
+  background-color: #08070C;
+  padding: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 32px;
-  gap: 32px;
-  position: relative;
-  /* height: 2416.13px; */
-  background: #08070c;
-  font-family: "Fjalla One", sans-serif;
-  z-index: 1;
-}
-
-h1 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-/* Desktop */
-.app-desktop {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 128px;
-  gap: 128px;
-  position: relative;
-  background: #08070c;
-  font-family: "Fjalla One", sans-serif;
 }
 
-.container-mid-desktop {
+.buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 64px;
-
-  order: 1;
-}
-
-.container-map-desktop {
-  width: 40%;
-}
-
-.container-description-desktop {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  height: 27rem;
-}
-
-.container-bot-desktop {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  padding: 0px;
-  gap: 64px;
-  order: 2;
-  height: 26rem;
-}
-
-.container-photogrid-desktop {
-  width: 60%;
-}
-
-.container-footer-desktop {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   gap: 16px;
 }
+
+/*# sourceMappingURL=index.css.map */

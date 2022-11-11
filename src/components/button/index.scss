@@ -1,0 +1,25 @@
+@import '../../index.scss';
+
+a{
+    text-decoration: none;
+}
+
+.button{
+    background-color: $light;
+    @include label;
+    color: $dark;
+    border: none;
+    padding: $w1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &.rounded{
+        border-radius: 100%;
+    }
+    &.secondary{
+        background-color: $dark;
+        color: $light;
+        outline: $light solid 2px;
+        outline-offset: -2px;
+    }
+}
