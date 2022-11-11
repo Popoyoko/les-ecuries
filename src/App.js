@@ -1,4 +1,3 @@
-import useMatchMedia from "./hooks/useMatchMedia"
 import vector from './assets/Vector.png';
 import vector_1 from './assets/Vector_1.png';
 import vector_2 from './assets/Vector_2.png';
@@ -11,10 +10,8 @@ import Map from "./components/map";
 import Horraires from "./components/horraires";
 import Socials from "./components/socials";
 import Footer from "./components/footer";
-import PhotoGrid from "./components/photoGrid";
 
 function App() {
-  const isWideViewport = useMatchMedia("(max-width:700px)");
   return (
     <div className="App">
       <Header />
