@@ -1,13 +1,11 @@
-import vector from './assets/Vector.png';
-import vector_1 from './assets/Vector_1.png';
-import vector_2 from './assets/Vector_2.png';
+import vector from "./assets/Vector.png";
+import vector_1 from "./assets/Vector_1.png";
+import vector_2 from "./assets/Vector_2.png";
 
 import Header from "./components/header";
 import Button from "./components/button";
-import Description from "./components/description";
 import Slider from "./components/slider";
 import Map from "./components/map";
-import Horraires from "./components/horraires";
 import Socials from "./components/socials";
 import Footer from "./components/footer";
 
@@ -16,22 +14,33 @@ function App() {
     <div className="App">
       <Header />
       <div className="buttons">
-        <Button href='https://pro.guestonline.fr/instabook/bookings/1kATjqd'>Réservation en ligne</Button>
-        <Button secondary>Contactez-nous
+        <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
+          Réservation en ligne
+        </Button>
+        <Button secondary>
+          Contactez-nous
           <img src={vector} className="vector" alt="logo_contactez-nous" />
         </Button>
       </div>
-      <Description />
-      <Slider />
-      {/* 
       <div className="description">
         <p>
-          Autrefois bureau de poste, lieu secret de fête du Paris mondain dans les années 70, restaurant médiéval dans les années 90,
-          l’espace atypique des Ecuries n’a jamais cessé de renaitre et d’évoluer depuis la construction de ces murs. Réouvert en septembre 2014,
-          ce lieu unique est aujourd’hui un espace de fête et d’exposition, un espace artistique et collaboratif basé sur l’échange et la créativité,
-          ouvert aux talents et aux artistes.
+          Autrefois bureau de poste, lieu secret de fête du Paris mondain dans
+          les années 70, restaurant médiéval dans les années 90, l’espace
+          atypique des Ecuries n’a jamais cessé de renaitre et d’évoluer depuis
+          la construction de ces murs. Réouvert en septembre 2014, ce lieu
+          unique est aujourd’hui un espace de fête et d’exposition, un espace
+          artistique et collaboratif basé sur l’échange et la créativité, ouvert
+          aux talents et aux artistes.
         </p>
       </div>
+      <Slider />
+      <div className="description">
+        <p>
+          A travers sa décoration, sa carte, sa programmation, Les Ecuries veut
+          promouvoir un état d’esprit basé sur le respect, la chaleur, la fête,
+          l’échange, la solidarité, la créativité, la musique.
+        </p>
+      </div> 
       <div className="buttons">
         <Button secondary href='http://lesecuries-bar.com/wp-content/uploads/2015/06/Menu-Les-E%CC%81curies-Site.pdf'>
           Notre carte
@@ -43,7 +52,12 @@ function App() {
         </Button>
       </div>
       <Map />
-      <Horraires />
+      <div className="horraires">
+        <p>
+        Ouvert du mardi au samedi de 18h à 1h30 (dimanche et lundi selon programmation)
+        </p>
+      </div>
+      {/*
       <Button secondary icon><img src={vector_1} className="vector_1" alt="logo_Notre carte" /></Button>
       <Socials />
       <Footer /> */}

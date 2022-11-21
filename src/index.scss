@@ -77,3 +77,14 @@ body {
   gap: $w1;
   width: 100%;
 }
+
+.description > p {
+  @include paragraph;
+  color: $light;
+}
+
+.horraires > p {
+  @include smaller;
+  color: $light;
+  order: 7;
+}
