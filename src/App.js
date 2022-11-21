@@ -1,6 +1,7 @@
 import vector from "./assets/Vector.png";
 import vector_1 from "./assets/Vector_1.png";
 import vector_2 from "./assets/Vector_2.png";
+import vector_3 from "./assets/Vector_3.png";
 
 import Header from "./components/header";
 import Button from "./components/button";
@@ -40,27 +41,46 @@ function App() {
           promouvoir un état d’esprit basé sur le respect, la chaleur, la fête,
           l’échange, la solidarité, la créativité, la musique.
         </p>
-      </div> 
+      </div>
       <div className="buttons">
-        <Button secondary href='http://lesecuries-bar.com/wp-content/uploads/2015/06/Menu-Les-E%CC%81curies-Site.pdf'>
+        <Button
+          secondary
+          href="http://lesecuries-bar.com/wp-content/uploads/2015/06/Menu-Les-E%CC%81curies-Site.pdf"
+        >
           Notre carte
           <img src={vector_1} className="vector_1" alt="logo_Notre carte" />
         </Button>
-        <Button secondary href='https://www.facebook.com/lesecuriesbar/events'>
+        <Button secondary href="https://www.facebook.com/lesecuriesbar/events">
           Programmation
           <img src={vector_2} className="vector_2" alt="logo_Programmation" />
         </Button>
       </div>
       <Map />
-      <div className="horraires">
+      <div className="timetable">
         <p>
-        Ouvert du mardi au samedi de 18h à 1h30 (dimanche et lundi selon programmation)
+          Ouvert du mardi au samedi de 18h à 1h30 (dimanche et lundi selon
+          programmation)
         </p>
       </div>
-      {/*
-      <Button secondary icon><img src={vector_1} className="vector_1" alt="logo_Notre carte" /></Button>
-      <Socials />
-      <Footer /> */}
+
+      <div className="socials">
+        <div className="follow">
+          <h2>Suivez-nous</h2>
+        </div>
+        <div className="socials-button">
+          <Button secondary icon href="https://www.facebook.com/lesecuriesbar/">
+            <img src={vector_2} className="vector" alt="logo_contactez-nous" />
+          </Button>
+          <Button
+            secondary
+            icon
+            href="https://www.instagram.com/bar_les_ecuries_paris/"
+          >
+            <img src={vector_3} className="vector" alt="logo_contactez-nous" />
+          </Button>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
