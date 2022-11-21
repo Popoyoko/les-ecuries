@@ -47,7 +47,7 @@ $w1: 16px;
 }
 
 @mixin smaller {
-  font-family: "Merriweather";
+  font-family: $Merriweather;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;

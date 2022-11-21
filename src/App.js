@@ -7,7 +7,6 @@ import Header from "./components/header";
 import Button from "./components/button";
 import Slider from "./components/slider";
 import Map from "./components/map";
-import Socials from "./components/socials";
 import Footer from "./components/footer";
 
 function App() {
