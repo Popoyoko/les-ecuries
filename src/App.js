@@ -21,8 +21,8 @@ function App() {
           <img src={vector} className="vector" alt="logo_contactez-nous" />
         </Button>
       </div>
-      <Description />
-      <Slider />
+      {/* <Description /> */}
+      {/* <Slider />
       <div className="description">
         <p>
           Autrefois bureau de poste, lieu secret de fête du Paris mondain dans les années 70, restaurant médiéval dans les années 90,
@@ -45,7 +45,7 @@ function App() {
       <Horraires />
       <Button secondary icon><img src={vector_1} className="vector_1" alt="logo_Notre carte" /></Button>
       <Socials />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
