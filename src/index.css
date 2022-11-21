@@ -11,8 +11,8 @@ body {
 
 .buttons {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  flex-direction: column;
   gap: 16px;
 }
 

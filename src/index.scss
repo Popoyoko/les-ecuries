@@ -69,7 +69,8 @@ body {
 
 .buttons {
     display: flex;
-    flex-direction: row;
+    // flex-direction: row; for desktop
     justify-content: center;
+    flex-direction: column;
     gap: $w1;
 }

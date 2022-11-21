@@ -5,12 +5,14 @@ a{
 }
 
 .button{
+    width: 100%;
     background-color: $light;
     @include label;
     color: $dark;
     border: none;
     padding: $w1;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     &.rounded{
