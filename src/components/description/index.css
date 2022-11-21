@@ -1,36 +1,33 @@
-:root{
-    --white_site: #F3F2F7;
-    --black_site: #08070C;
-    --button_gap: 10px;
-    --flex_grow_none: 0;
+body {
+  margin: 0;
+  background-color: #08070c;
 }
 
-.Description{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: var(--button_gap);
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 32px;
+}
 
-
-flex: none;
-order: 2;
-align-self: stretch;
-flex-grow: var(--flex_grow_none);
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
 }
 
 .description > p {
-
-font-family: 'Merriweather';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 28px;
-
-color: var(--white_site);
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: var(--flex_grow_none);
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+  color: #f3f2f7;
 }
+
+/*# sourceMappingURL=index.css.map */

@@ -21,7 +21,7 @@ function App() {
           <img src={vector} className="vector" alt="logo_contactez-nous" />
         </Button>
       </div>
-      {/* <Description /> */}
+      <Description />
       {/* <Slider />
       <div className="description">
         <p>
