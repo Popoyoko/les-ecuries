@@ -1,23 +1,86 @@
-.slider{
-display: flex;
-align-items: flex-start;
-padding: 0px;
-gap: 16px;
-
-
-width: 100%;
-height: 320px;
-overflow-x: scroll;
-
-order: 3;
-flex-grow: 0;
+body {
+  margin: 0;
+  background-color: #08070c;
 }
 
-.slider >  img {
-    width: 320px;
-    height: 320px;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 32px;
 }
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.container-top-slider > img {
+  height: auto;
+  width: auto;
+}
+
+.container-bot-slider {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+
+h6 {
+  font-family: "Fjalla One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0;
+  color: #f3f2f7;
+}
+
+.container-bot-slider > .description > p {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+
+.navigation > button {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */

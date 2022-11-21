@@ -1,0 +1,59 @@
+@import "../../index.scss";
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    // padding: 32px; idk why ?
+}
+
+.container-top-slider {
+
+}
+
+.container-top-slider > img {
+height: auto;
+width: auto;
+}
+
+.container-bot-slider {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+
+h6 {
+  @include label;
+  color: $light;
+}
+
+.container-bot-slider > .description > p {
+    @include small;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+.navigation > button{
+    padding: $w1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

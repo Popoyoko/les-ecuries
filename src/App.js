@@ -22,7 +22,8 @@ function App() {
         </Button>
       </div>
       <Description />
-      {/* <Slider />
+      <Slider />
+      {/* 
       <div className="description">
         <p>
           Autrefois bureau de poste, lieu secret de fête du Paris mondain dans les années 70, restaurant médiéval dans les années 90,
