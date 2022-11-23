@@ -1,0 +1,19 @@
+@import '../../index.scss';
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: $w1;
+  align-items: center;
+}
+
+.follow > h2 {
+  @include label;
+  color: $light;
+}
+.socials-button {
+  display: flex;
+  // flex-direction: row; for desktop
+  justify-content: center;
+  gap: $w1;
+}

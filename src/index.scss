@@ -79,24 +79,6 @@ body {
   width: 100%;
 }
 
-.socials {
-  display: flex;
-  flex-direction: column;
-  gap: $w1;
-  align-items: center
-}
-
-.follow > h2 {
-  @include label;
-  color: $light;
-}
-.socials-button {
-  display: flex;
-  // flex-direction: row; for desktop
-  justify-content: center;
-  gap: $w1;
-}
-
 .description > p {
   @include paragraph;
   color: $light;

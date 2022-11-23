@@ -87,43 +87,27 @@ body {
   align-items: center;
 }
 
-a {
-  text-decoration: none;
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
 }
 
-.button {
-  width: 100%;
-  background-color: #f3f2f7;
+.follow > h2 {
   font-family: "Fjalla One";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
   margin: 0;
-  color: #08070c;
-  border: none;
-  padding: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.button.rounded {
-  border-radius: 100%;
-  width: 2.5rem;
-  height: 2.5rem;
-}
-.button.secondary {
-  background-color: #08070c;
   color: #f3f2f7;
-  outline: #f3f2f7 solid 2px;
-  outline-offset: -2px;
 }
 
-@media screen and (min-width: 700px) {
-  .button {
-    width: 12rem;
-  }
+.socials-button {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 
 /*# sourceMappingURL=index.css.map */

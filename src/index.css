@@ -21,29 +21,6 @@ body {
   width: 100%;
 }
 
-.socials {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-}
-
-.follow > h2 {
-  font-family: "Fjalla One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  margin: 0;
-  color: #f3f2f7;
-}
-
-.socials-button {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-}
-
 .description > p {
   font-family: "Merriweather";
   font-style: normal;

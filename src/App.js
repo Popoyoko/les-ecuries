@@ -9,6 +9,7 @@ import Header from "./components/header";
 import Button from "./components/button";
 import Slider from "./components/slider";
 import Map from "./components/map";
+import Socials from "./components/socials"
 import Footer from "./components/footer";
 
 function App() {
@@ -74,35 +75,7 @@ function App() {
             </p>
           </div>
 
-          <div className="socials">
-            <div className="follow">
-              <h2>Suivez-nous</h2>
-            </div>
-            <div className="socials-button">
-              <Button
-                secondary
-                icon
-                href="https://www.facebook.com/lesecuriesbar/"
-              >
-                <img
-                  src={vector_2}
-                  className="vector"
-                  alt="logo_contactez-nous"
-                />
-              </Button>
-              <Button
-                secondary
-                icon
-                href="https://www.instagram.com/bar_les_ecuries_paris/"
-              >
-                <img
-                  src={vector_3}
-                  className="vector"
-                  alt="logo_contactez-nous"
-                />
-              </Button>
-            </div>
-          </div>
+          <Socials />
           <Footer />
         </div>
       ) : (
@@ -187,35 +160,7 @@ function App() {
               </div>
               <div className="desktop-container-footer">
                 <Footer />
-                <div className="socials">
-                  <div className="follow">
-                    <h2>Suivez-nous</h2>
-                  </div>
-                  <div className="socials-button">
-                    <Button
-                      secondary
-                      icon
-                      href="https://www.facebook.com/lesecuriesbar/"
-                    >
-                      <img
-                        src={vector_2}
-                        className="vector"
-                        alt="logo_contactez-nous"
-                      />
-                    </Button>
-                    <Button
-                      secondary
-                      icon
-                      href="https://www.instagram.com/bar_les_ecuries_paris/"
-                    >
-                      <img
-                        src={vector_3}
-                        className="vector"
-                        alt="logo_contactez-nous"
-                      />
-                    </Button>
-                  </div>
-                </div>
+                <Socials />
               </div>
             </div>
           </div>
