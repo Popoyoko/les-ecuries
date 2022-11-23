@@ -38,3 +38,9 @@ justify-content: center;
     @include paragraph;
     color: $light;
 }
+
+@media  screen and (min-width: 700px) {
+    header {
+      height: auto;
+    }
+  }
