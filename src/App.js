@@ -3,13 +3,12 @@ import useMatchMedia from "./hooks/useMatchMedia";
 import vector from "./assets/Vector.png";
 import vector_1 from "./assets/Vector_1.png";
 import vector_2 from "./assets/Vector_2.png";
-import vector_3 from "./assets/Vector_3.png";
 
 import Header from "./components/header";
 import Button from "./components/button";
 import Slider from "./components/slider";
 import Map from "./components/map";
-import Socials from "./components/socials"
+import Socials from "./components/socials";
 import Footer from "./components/footer";
 
 function App() {
