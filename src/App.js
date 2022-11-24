@@ -154,16 +154,13 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="desktop-container-bot">
-              <div className="desktop-container-map">
                 <Map />
-              </div>
               <div className="desktop-container-footer">
-                <Footer />
                 <Socials />
+                <Footer />
+               
               </div>
             </div>
-          </div>
         </div>
       )}
     </div>

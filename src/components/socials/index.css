@@ -81,7 +81,7 @@ h6 {
   flex-direction: column;
 }
 
-.desktop-container-information, .desktop-container-footer {
+.desktop-container-information {
   gap: 16px;
 }
 
@@ -89,12 +89,18 @@ h6 {
   width: 60%;
 }
 
-.desktop-container-information, .desktop-container-map {
+.desktop-container-information {
   width: 40%;
 }
 
 .desktop-container-bot {
   align-items: center;
+}
+
+.desktop-container-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
 }
 
 .socials {
