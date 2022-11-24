@@ -1,68 +1,144 @@
 //colors
-$light: #F3F2F7;
-$dark: #08070C;
+$light: #f3f2f7;
+$dark: #08070c;
 
 //font-families
-$FjallaOne: 'Fjalla One';
-$Merriweather: 'Merriweather';
+$FjallaOne: "Fjalla One";
+$Merriweather: "Merriweather";
 
 //spacing
 $w1: 16px;
 
 //texts
 @mixin heading {
-    font-family: $FjallaOne;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 40px;
+  font-family: $FjallaOne;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0;
 }
 
 @mixin label {
-    font-family: $FjallaOne;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
+  font-family: $FjallaOne;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0;
 }
 
 @mixin paragraph {
-    font-family: $Merriweather;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
+  font-family: $Merriweather;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
 }
 
 @mixin small {
-    font-family: $Merriweather;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
+  font-family: $Merriweather;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0;
 }
 
 @mixin smaller {
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 13px;
+  font-family: $Merriweather;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  margin: 0;
 }
 
 body {
-    margin: 0;
-    background-color: $dark;
-    padding: $w1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  margin: 0;
+  background-color: $dark;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 32px;
+  margin: 0 auto;
+}
+
+h6 {
+  @include label;
+  color: $light;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  // flex-direction: row; for desktop
+  justify-content: center;
+  flex-direction: column;
+  gap: $w1;
+  width: 100%;
+}
+
+.description > p {
+  @include paragraph;
+  color: $light;
+}
+
+.timetable > p {
+  @include smaller;
+  color: $light;
+}
+
+//Desktop
+@media screen and (min-width: 700px) {
+  .App {
+    flex-direction: none;
+    gap: 128px;
+    padding: 128px;
+    width: 60rem;
     justify-content: center;
-    gap: $w1;
+  }
+  .buttons {
+    flex-direction: row;
+  }
+  .socials-button {
+    gap: 2rem;
+  }
+}
+
+.desktop-container-mid,
+.desktop-container-bot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 64px;
+  width: 100%;
+}
+
+.desktop-container-mid > *,.desktop-container-bot > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-container-information, .desktop-container-footer{
+  gap: $w1;
+}
+
+.desktop-container-slider, .desktop-container-footer{
+  width: 60%;
+}
+
+.desktop-container-information, .desktop-container-map{
+  width: 40%;
+}
+
+
+.desktop-container-bot{
+  align-items: center;
 }

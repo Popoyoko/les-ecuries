@@ -1,0 +1,38 @@
+@import '../../index.scss';
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: $w1;
+}
+
+footer > img {
+    width: 3rem;
+}
+
+.presbloc_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+
+h1{
+    @include heading;
+    color: $light;
+}
+
+#adresse{
+    @include small;
+    color: $light;
+}
+
+#site {
+    @include small;
+    color: $light;
+}

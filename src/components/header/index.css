@@ -1,59 +1,149 @@
-:root{
-    --white_site: #F3F2F7;
-    --flex_grow_none: 0;
+body {
+  margin: 0;
+  background-color: #08070c;
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 128px 0px;
-    gap: 64px;
-
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 32px;
+  margin: 0 auto;
 }
 
+h6 {
+  font-family: "Fjalla One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0;
+  color: #f3f2f7;
+}
 
-.presbloc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    
-    width: 251px;
-    height: 68px;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 1;
-    flex-grow: var(--flex_grow_none);
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.description > p {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+  color: #f3f2f7;
+}
+
+.timetable > p {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  margin: 0;
+  color: #f3f2f7;
+}
+
+@media screen and (min-width: 700px) {
+  .App {
+    flex-direction: none;
+    gap: 128px;
+    padding: 128px;
+    width: 60rem;
+    justify-content: center;
+  }
+  .buttons {
+    flex-direction: row;
+  }
+  .socials-button {
+    gap: 2rem;
+  }
+}
+.desktop-container-mid,
+.desktop-container-bot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 64px;
+  width: 100%;
+}
+
+.desktop-container-mid > *, .desktop-container-bot > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-container-information, .desktop-container-footer {
+  gap: 16px;
+}
+
+.desktop-container-slider, .desktop-container-footer {
+  width: 60%;
+}
+
+.desktop-container-information, .desktop-container-map {
+  width: 40%;
+}
+
+.desktop-container-bot {
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 128px 0px;
+  gap: 64px;
+  height: 29rem;
+  flex: none;
+}
+
+.information-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 251px;
+  height: 4.25rem;
+  flex: none;
+  order: 1;
+  flex-grow: var(--flex_grow_none);
 }
 
 #les-ecuries {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 40px;
-    
-    color: white;
-    
-    flex: none;
-    order: 0;
-    flex-grow: var(--flex_grow_none);
+  font-family: "Fjalla One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0;
+  color: #f3f2f7;
 }
 
 .place {
-    text-align: center;
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+  color: #f3f2f7;
+}
 
-    color: var(--white_site);
-    
-    flex: none;
-    order: 1;
-    flex-grow: var(--flex_grow_none);
-    }
+@media screen and (min-width: 700px) {
+  header {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

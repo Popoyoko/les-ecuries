@@ -1,61 +1,26 @@
 import "./index.css";
-import vector_2_socials from "../../assets/Vector_2.png";
-import image_3_socials from "../../assets/Vector_3.png";
-import useMatchMedia from "react-use-match-media";
+import vector_2 from'../../assets/Vector_2.png';
+import vector_3 from'../../assets/Vector_3.png';
+import Button from '../button';
 
 function Socials() {
-  const isWideViewport = useMatchMedia("(max-width:700px)");
-
   return (
     <div className="socials">
-      {isWideViewport ? (
-        <div className="split-socials">
-          <p>Suivez-nous</p>
-          <div className="split-socials-smartphone">
-            <div className="social">
-              <img
-                src={vector_2_socials}
-                className="image_2_socials"
-                alt="logo_facebook"
-              />
-            </div>
-            <div className="social">
-              <img
-                src={image_3_socials}
-                className="image_3_socials"
-                alt="logo_instagram"
-              />
-            </div>
-          </div>
-        </div>
-      ) : (
-        <div className="container-socials">
-          <div className="split-socials">
-            <p id="plus-de-photos">Plus de photos</p>
-            <div className="social">
-              <a href="https://www.facebook.com/lesecuriesbar/">
-              <img
-                src={vector_2_socials}
-                className="image_2_socials"
-                alt="logo_facebook"
-              />
-              </a>
-            </div>
-          </div>
-          <div className="split-socials">
-            <p>Suivez-nous</p>
-            <div className="social">
-              <a href="https://www.instagram.com/bar_les_ecuries_paris/">
-              <img
-                src={image_3_socials}
-                className="image_3_socials"
-                alt="logo_instagram"
-              />
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
+      <div className="follow">
+        <h2>Suivez-nous</h2>
+      </div>
+      <div className="socials-button">
+        <Button secondary icon href="https://www.facebook.com/lesecuriesbar/">
+          <img src={vector_2} className="vector" alt="logo_contactez-nous" />
+        </Button>
+        <Button
+          secondary
+          icon
+          href="https://www.instagram.com/bar_les_ecuries_paris/"
+        >
+          <img src={vector_3} className="vector" alt="logo_contactez-nous" />
+        </Button>
+      </div>
     </div>
   );
 }
