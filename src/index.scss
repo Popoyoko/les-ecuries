@@ -70,6 +70,11 @@ body {
   margin: 0 auto;
 }
 
+h6 {
+  @include label;
+  color: $light;
+}
+
 .buttons {
   display: flex;
   // flex-direction: row; for desktop
