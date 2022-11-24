@@ -13,6 +13,16 @@ body {
   margin: 0 auto;
 }
 
+h6 {
+  font-family: "Fjalla One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0;
+  color: #f3f2f7;
+}
+
 .buttons {
   display: flex;
   justify-content: center;
@@ -123,16 +133,6 @@ body {
   align-items: flex-start;
   padding: 0px;
   gap: 10px;
-}
-
-h6 {
-  font-family: "Fjalla One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  margin: 0;
-  color: #f3f2f7;
 }
 
 .container-bot-slider > .description > p {
