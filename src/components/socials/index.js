@@ -1,6 +1,6 @@
 import "./index.css";
-import vector_2 from'../../assets/Vector_2.png';
-import vector_3 from'../../assets/Vector_3.png';
+import icon_facebook from'../../assets/icon_facebook.png';
+import icon_instagram from'../../assets/icon_instagram.png';
 import Button from '../button';
 
 function Socials() {
@@ -11,14 +11,14 @@ function Socials() {
       </div>
       <div className="socials-button">
         <Button secondary icon href="https://www.facebook.com/lesecuriesbar/">
-          <img src={vector_2} className="vector" alt="logo_contactez-nous" />
+          <img src={icon_facebook} className="vector" alt="logo_contactez-nous" />
         </Button>
         <Button
           secondary
           icon
           href="https://www.instagram.com/bar_les_ecuries_paris/"
         >
-          <img src={vector_3} className="vector" alt="logo_contactez-nous" />
+          <img src={icon_instagram} className="vector" alt="logo_contactez-nous" />
         </Button>
       </div>
     </div>
