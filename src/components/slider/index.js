@@ -1,6 +1,6 @@
 import './index.css'
 
-import image_5_slider from'../../assets/image_5.png';
+import image_food from'../../assets/image_food.png';
 
 import arrow_left from '../../assets/arrow-left.png';
 import arrow_right from '../../assets/arrow-right.png';
@@ -10,7 +10,7 @@ function Slider() {
 	return (
     <div className="slider">
       <div className="container-top-slider">
-        <img src={image_5_slider} alt="image_slider" />
+        <img src={image_food} alt="image_slider" />
       </div>
 
       <div className="container-bot-slider">
