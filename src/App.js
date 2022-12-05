@@ -49,7 +49,7 @@ function App() {
           <div className="buttons">
             <Button
               secondary
-              href="http://lesecuries-bar.com/wp-content/uploads/2015/06/Menu-Les-E%CC%81curies-Site.pdf"
+              href="./assets/Menu-Les-Ecuries.pdf"
             >
               Notre carte
               <img src={icon_carte} className="vector_1" alt="logo_Notre carte" />
