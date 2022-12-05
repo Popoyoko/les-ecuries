@@ -7,9 +7,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import {useSwiper} from "swiper/react";
 import "swiper/css";
 
-import "swiper/less";
-import "swiper/less/navigation";
-import "swiper/less/pagination";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";

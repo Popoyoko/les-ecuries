@@ -22,6 +22,10 @@ padding: 32px;
   width: 80%;
 }
 
+.swiper-pagination{
+  --swiper-theme-color: #f3f2f7;
+}
+
 .container-bot-slider {
   display: flex;
   flex-direction: row;
