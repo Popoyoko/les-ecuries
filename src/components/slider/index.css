@@ -107,6 +107,8 @@ h6 {
   width: 35rem;
   display: flex;
   flex-direction: column;
+  gap: 32px;
+  padding: 32px;
 }
 
 .container-top-slider {
