@@ -135,6 +135,9 @@ a {
   outline: #f3f2f7 solid 2px;
   outline-offset: -2px;
 }
+.button.cubic {
+  width: auto;
+}
 
 @media screen and (min-width: 700px) {
   .button {

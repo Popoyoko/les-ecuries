@@ -26,6 +26,9 @@ a{
         outline: $light solid 2px;
         outline-offset: -2px;
     }
+    &.cubic{
+        width: auto;
+    }
 }
 
 @media  screen and (min-width: 700px) {

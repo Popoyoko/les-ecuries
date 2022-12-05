@@ -1,4 +1,5 @@
 import "./index.css";
+import Button from '../button';
 
 import { Pagination } from "swiper";
 
@@ -65,12 +66,12 @@ function Slider() {
         </div>
 
         <div className="navigation">
-          <button>
+          <Button cubic>
             <img src={arrow_left} alt="arrow_left" />
-          </button>
-          <button>
+          </Button>
+          <Button cubic>
             <img src={arrow_right} alt="arrow_right" />
-          </button>
+          </Button>
         </div>
       </div>
       </div>
