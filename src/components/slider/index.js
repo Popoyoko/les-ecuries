@@ -1,7 +1,5 @@
 import './index.css'
 
-// import image_coktail from'../../assets/image_coktail.png';
-// import image_dj from'../../assets/image_dj.png';
 import image_food from'../../assets/image_food.png';
 
 import arrow_left from '../../assets/arrow-left.png';
