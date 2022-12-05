@@ -97,9 +97,9 @@ function App() {
               </div>
             </div>
             <div className="desktop-container-mid">
-              <div className="desktop-container-slider">
-                <Slider />
-              </div>
+              
+              <Slider />
+              
               <div className="desktop-container-information">
                 <div className="description">
                   <p>
@@ -157,7 +157,6 @@ function App() {
               <div className="desktop-container-footer">
                 <Socials />
                 <Footer />
-               
               </div>
             </div>
         </div>

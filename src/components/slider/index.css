@@ -104,19 +104,22 @@ h6 {
 }
 
 .slider {
+  width: 35rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
 }
 
 .container-top-slider {
   width: 100%;
 }
 
-.container-top-slider > img {
+.slide > img {
   height: auto;
   width: 100%;
+}
+
+.slide-container {
+  width: 80%;
 }
 
 .container-bot-slider {
