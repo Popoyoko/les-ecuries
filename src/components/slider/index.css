@@ -118,6 +118,7 @@ h6 {
 .slide > img {
   height: auto;
   width: 100%;
+  min-height: 35rem;
 }
 
 .slide-container {
