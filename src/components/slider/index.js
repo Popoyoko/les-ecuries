@@ -4,7 +4,7 @@ import Button from '../button';
 import { Pagination } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-// import {useSwiper} from "swiper/react";
+import {useSwiper} from "swiper/react";
 import "swiper/css";
 
 import "swiper/scss";
@@ -19,7 +19,7 @@ import arrow_left from "../../assets/arrow-left.png";
 import arrow_right from "../../assets/arrow-right.png";
 
 function Slider() {
-  // const swiper = useSwiper();
+  const swiper = useSwiper();
 
   return (
     <>
@@ -34,22 +34,21 @@ function Slider() {
         pagination={{ clickable: true }}
       >
         <SwiperSlide className="slide">
-          <img src={image_3_slider} alt="image_slider" />
+        {({ isActive }) => (
+      <img src={image_3_slider} alt="image_slider">{isActive ? 'active' : 'not active'}</img>
+      
+    )}
         </SwiperSlide>
         <SwiperSlide className="slide">
-          <img src={image_4_slider} alt="image_slider" />
+        {({ isActive }) => (
+      <img src={image_4_slider} alt="image_slider" >{isActive ? 'active' : 'not active'}</img>
+    )}
         </SwiperSlide>
         <SwiperSlide className="slide">
-          <img src={image_5_slider} alt="image_slider" />
+        {({ isActive }) => (
+      <img src={image_5_slider} alt="image_slider" >{isActive ? 'active' : 'not active'}</img>
+    )}
         </SwiperSlide>
-{/* 
-        <button onClick={() => swiper.slidesPerView()}>
-          <img src={arrow_left} alt="arrow_left" />
-        </button>
-        <button onClick={() => swiper.slideNext()}>
-          <img src={arrow_right} alt="arrow_right" />
-        </button>
-         */}
       </Swiper>
       
       <div className="container-bot-slider">
@@ -63,10 +62,10 @@ function Slider() {
         </div>
 
         <div className="navigation">
-          <Button cubic>
+          <Button cubic onClick={() => swiper.slidePrev()}>
             <img src={arrow_left} alt="arrow_left" />
           </Button>
-          <Button cubic>
+          <Button cubic onClick={() => swiper.slideNext()}>
             <img src={arrow_right} alt="arrow_right" />
           </Button>
         </div>
