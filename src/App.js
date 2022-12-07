@@ -27,7 +27,7 @@ function App() {
             <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
               Réservation en ligne
             </Button>
-            <Button secondary action={setDialog(true)}>
+            <Button secondary action={() => setDialog(true)}>
               Contactez-nous
               <img
                 src={icon_telephone}
@@ -116,7 +116,7 @@ function App() {
                 <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
                   Réservation en ligne
                 </Button>
-                <Button secondary>
+                <Button secondary action={() => setDialog(true)}>
                   Contactez-nous
                   <img
                     src={icon_telephone}
@@ -124,26 +124,27 @@ function App() {
                     alt="logo_contactez-nous"
                   />
                 </Button>
-                {}
-                <Dialog>
-                  <p>
-                    Nous ne pouvons prendre aucune réservation par téléphone.
-                  </p>
-                  <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
-                    Réservation en ligne
-                  </Button>
-                  <Button secondary>
-                    07 64 54 09 74
-                    <img
-                      src={icon_telephone}
-                      className="vector"
-                      alt="logo_contactez-nous"
-                    />
-                  </Button>
-                  <p>
-                    Nous répondons également à toutes vos questions par mail:
-                  </p>
-                </Dialog>
+                {isDialog &&
+                  <Dialog>
+                    <p>
+                      Nous ne pouvons prendre aucune réservation par téléphone.
+                    </p>
+                    <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
+                      Réservation en ligne
+                    </Button>
+                    <Button secondary>
+                      07 64 54 09 74
+                      <img
+                        src={icon_telephone}
+                        className="vector"
+                        alt="logo_contactez-nous"
+                      />
+                    </Button>
+                    <p>
+                      Nous répondons également à toutes vos questions par mail:
+                    </p>
+                  </Dialog>
+                }
               </div>
             </div>
             <div className="desktop-container-mid">
