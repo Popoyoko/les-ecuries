@@ -1,10 +1,10 @@
 import "./index.css";
 import Button from '../button';
+import React, { useRef } from "react";
 
 import { Pagination } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-// import {useSwiper} from "swiper/react";
 import "swiper/css";
 
 import "swiper/scss";
@@ -19,7 +19,8 @@ import arrow_left from "../../assets/arrow-left.png";
 import arrow_right from "../../assets/arrow-right.png";
 
 function Slider() {
-  // const swiper = useSwiper();
+
+  const swiperRef = useRef();
 
   return (
     <>
@@ -32,26 +33,34 @@ function Slider() {
         slidesPerView={1}
         // navigation
         pagination={{ clickable: true }}
+        onBeforeInit={(swiper) => {
+          swiperRef.current = swiper;
+        }}
+        navigation={{
+     nextEl: '.review-swiper-button-next',
+     prevEl: '.review-swiper-button-prev',
+   }}
       >
         <SwiperSlide className="slide">
-          <img src={image_3_slider} alt="image_slider" />
+
+      <img src={image_3_slider} alt="image_slider"></img>
+
         </SwiperSlide>
         <SwiperSlide className="slide">
-          <img src={image_4_slider} alt="image_slider" />
+
+      <img src={image_4_slider} alt="image_slider" ></img>
+
         </SwiperSlide>
         <SwiperSlide className="slide">
-          <img src={image_5_slider} alt="image_slider" />
+        
+      <img src={image_5_slider} alt="image_slider" ></img>
+
         </SwiperSlide>
-{/* 
-        <button onClick={() => swiper.slidesPerView()}>
-          <img src={arrow_left} alt="arrow_left" />
-        </button>
-        <button onClick={() => swiper.slideNext()}>
-          <img src={arrow_right} alt="arrow_right" />
-        </button>
-         */}
       </Swiper>
       
+      <button className="review-swiper-button-next" onClick={() => swiperRef.current?.slidePrev()}><img src={arrow_left} alt="arrow_left" /></button>
+      <button className="review-swiper-button-prev" onClick={() => swiperRef.current?.slideNext()}><img src={arrow_right} alt="arrow_right" /></button>
+
       <div className="container-bot-slider">
         <div className="description">
           <h6>Notre burger accompagné de ses frites</h6>
@@ -63,10 +72,10 @@ function Slider() {
         </div>
 
         <div className="navigation">
-          <Button cubic>
+          <Button className="review-swiper-button-next" cubic onClick={() => swiperRef.current?.slidePrev()}>
             <img src={arrow_left} alt="arrow_left" />
           </Button>
-          <Button cubic>
+          <Button className="review-swiper-button-prev" cubic onClick={() => swiperRef.current?.slideNext()}>
             <img src={arrow_right} alt="arrow_right" />
           </Button>
         </div>
