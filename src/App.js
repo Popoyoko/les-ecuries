@@ -1,5 +1,7 @@
 import useMatchMedia from "./hooks/useMatchMedia";
 
+import { useState } from "react";
+
 import icon_telephone from "./assets/icon_telephone.png";
 import icon_carte from "./assets/icon_carte.png";
 import icon_facebook from "./assets/icon_facebook.png";
@@ -10,9 +12,13 @@ import Slider from "./components/slider";
 import Map from "./components/map";
 import Socials from "./components/socials";
 import Footer from "./components/footer";
+import Popin from "./components/popin";
+
 
 function App() {
   const isWideViewport = useMatchMedia("(max-width:700px)");
+  const [buttonPopin, setButtonPopin] = useState(false);
+
   return (
     <div>
       {isWideViewport ? (
@@ -22,10 +28,25 @@ function App() {
             <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
               Réservation en ligne
             </Button>
-            <Button secondary>
+            <Button secondary onClick={() => setButtonPopin(true)}>
               Contactez-nous
               <img src={icon_telephone} className="vector" alt="logo_contactez-nous" />
             </Button>
+            <Popin trigger={buttonPopin}>
+                  <p>Nous ne pouvons prendre aucune réservation par téléphone.</p>
+                  <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
+                    Réservation en ligne
+                  </Button>
+                  <Button secondary>
+                    07 64 54 09 74
+                    <img
+                      src={icon_telephone}
+                      className="vector"
+                      alt="logo_contactez-nous"
+                    />
+                  </Button>
+                  <p>Nous répondons également à toutes vos questions par mail:</p>
+                </Popin>
           </div>
           <div className="description">
             <p>
@@ -94,6 +115,21 @@ function App() {
                     alt="logo_contactez-nous"
                   />
                 </Button>
+                <Popin trigger={true}>
+                  <p>Nous ne pouvons prendre aucune réservation par téléphone.</p>
+                  <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
+                    Réservation en ligne
+                  </Button>
+                  <Button secondary>
+                    07 64 54 09 74
+                    <img
+                      src={icon_telephone}
+                      className="vector"
+                      alt="logo_contactez-nous"
+                    />
+                  </Button>
+                  <p>Nous répondons également à toutes vos questions par mail:</p>
+                </Popin>
               </div>
             </div>
             <div className="desktop-container-mid">
@@ -162,6 +198,7 @@ function App() {
             </div>
         </div>
       )}
+      
     </div>
   );
 }
