@@ -1,8 +1,8 @@
 import useMatchMedia from "./hooks/useMatchMedia";
 
-import vector from "./assets/Vector.png";
-import vector_1 from "./assets/Vector_1.png";
-import vector_2 from "./assets/Vector_2.png";
+import icon_telephone from "./assets/icon_telephone.png";
+import icon_carte from "./assets/icon_carte.png";
+import icon_facebook from "./assets/icon_facebook.png";
 
 import Header from "./components/header";
 import Button from "./components/button";
@@ -13,6 +13,7 @@ import Footer from "./components/footer";
 
 function App() {
   const isWideViewport = useMatchMedia("(max-width:700px)");
+  const funkExemple = () => console.log("this is an exemple")
   return (
     <div>
       {isWideViewport ? (
@@ -22,9 +23,9 @@ function App() {
             <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
               Réservation en ligne
             </Button>
-            <Button secondary>
+            <Button secondary action={funkExemple}>
               Contactez-nous
-              <img src={vector} className="vector" alt="logo_contactez-nous" />
+              <img src={icon_telephone} className="vector" alt="logo_contactez-nous" />
             </Button>
           </div>
           <div className="description">
@@ -52,7 +53,7 @@ function App() {
               href="http://lesecuries-bar.com/wp-content/uploads/2015/06/Menu-Les-E%CC%81curies-Site.pdf"
             >
               Notre carte
-              <img src={vector_1} className="vector_1" alt="logo_Notre carte" />
+              <img src={icon_carte} className="vector_1" alt="logo_Notre carte" />
             </Button>
             <Button
               secondary
@@ -60,7 +61,7 @@ function App() {
             >
               Programmation
               <img
-                src={vector_2}
+                src={icon_facebook}
                 className="vector_2"
                 alt="logo_Programmation"
               />
@@ -89,7 +90,7 @@ function App() {
                 <Button secondary>
                   Contactez-nous
                   <img
-                    src={vector}
+                    src={icon_telephone}
                     className="vector"
                     alt="logo_contactez-nous"
                   />
@@ -128,7 +129,7 @@ function App() {
                   >
                     Notre carte
                     <img
-                      src={vector_1}
+                      src={icon_carte}
                       className="vector_1"
                       alt="logo_Notre carte"
                     />
@@ -139,7 +140,7 @@ function App() {
                   >
                     Programmation
                     <img
-                      src={vector_2}
+                      src={icon_facebook}
                       className="vector_2"
                       alt="logo_Programmation"
                     />

@@ -8,9 +8,9 @@ import "swiper/css";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 
-import image_3_slider from "../../assets/image_3.png";
-import image_4_slider from "../../assets/image_4.png";
-import image_5_slider from "../../assets/image_5.png";
+import image_coktail from "../../assets/image_coktail.png";
+import image_dj from "../../assets/image_dj.png";
+import image_food from "../../assets/image_food.png";
 
 import arrow_left from "../../assets/arrow-left.png";
 import arrow_right from "../../assets/arrow-right.png";
@@ -38,13 +38,13 @@ function Slider() {
           }}
         >
           <SwiperSlide className="slide">
-            <img src={image_3_slider} alt="image_slider"></img>
+            <img src={image_coktail} alt="image_slider"></img>
           </SwiperSlide>
           <SwiperSlide className="slide">
-            <img src={image_4_slider} alt="image_slider"></img>
+            <img src={image_dj} alt="image_slider"></img>
           </SwiperSlide>
           <SwiperSlide className="slide">
-            <img src={image_5_slider} alt="image_slider"></img>
+            <img src={image_food} alt="image_slider"></img>
           </SwiperSlide>
         </Swiper>
 
