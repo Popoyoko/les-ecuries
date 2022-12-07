@@ -12,12 +12,11 @@ import Slider from "./components/slider";
 import Map from "./components/map";
 import Socials from "./components/socials";
 import Footer from "./components/footer";
-import Popin from "./components/popin";
-
+import Dialog from "./components/dialog";
 
 function App() {
   const isWideViewport = useMatchMedia("(max-width:700px)");
-  const [buttonPopin, setButtonPopin] = useState(false);
+  const [isDialog, setDialog] = useState(false);
 
   return (
     <div>
@@ -28,25 +27,31 @@ function App() {
             <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
               Réservation en ligne
             </Button>
-            <Button secondary onClick={() => setButtonPopin(true)}>
+            <Button secondary action={setDialog(true)}>
               Contactez-nous
-              <img src={icon_telephone} className="vector" alt="logo_contactez-nous" />
+              <img
+                src={icon_telephone}
+                className="vector"
+                alt="logo_contactez-nous"
+              />
             </Button>
-            <Popin trigger={buttonPopin}>
-                  <p>Nous ne pouvons prendre aucune réservation par téléphone.</p>
-                  <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
-                    Réservation en ligne
-                  </Button>
-                  <Button secondary>
-                    07 64 54 09 74
-                    <img
-                      src={icon_telephone}
-                      className="vector"
-                      alt="logo_contactez-nous"
-                    />
-                  </Button>
-                  <p>Nous répondons également à toutes vos questions par mail:</p>
-                </Popin>
+            {isDialog && (
+              <Dialog>
+                <p>Nous ne pouvons prendre aucune réservation par téléphone.</p>
+                <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
+                  Réservation en ligne
+                </Button>
+                <Button secondary>
+                  07 64 54 09 74
+                  <img
+                    src={icon_telephone}
+                    className="vector"
+                    alt="logo_contactez-nous"
+                  />
+                </Button>
+                <p>Nous répondons également à toutes vos questions par mail:</p>
+              </Dialog>
+            )}
           </div>
           <div className="description">
             <p>
@@ -73,7 +78,11 @@ function App() {
               href="http://lesecuries-bar.com/wp-content/uploads/2015/06/Menu-Les-E%CC%81curies-Site.pdf"
             >
               Notre carte
-              <img src={icon_carte} className="vector_1" alt="logo_Notre carte" />
+              <img
+                src={icon_carte}
+                className="vector_1"
+                alt="logo_Notre carte"
+              />
             </Button>
             <Button
               secondary
@@ -115,8 +124,11 @@ function App() {
                     alt="logo_contactez-nous"
                   />
                 </Button>
-                <Popin trigger={true}>
-                  <p>Nous ne pouvons prendre aucune réservation par téléphone.</p>
+                {}
+                <Dialog>
+                  <p>
+                    Nous ne pouvons prendre aucune réservation par téléphone.
+                  </p>
                   <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
                     Réservation en ligne
                   </Button>
@@ -128,8 +140,10 @@ function App() {
                       alt="logo_contactez-nous"
                     />
                   </Button>
-                  <p>Nous répondons également à toutes vos questions par mail:</p>
-                </Popin>
+                  <p>
+                    Nous répondons également à toutes vos questions par mail:
+                  </p>
+                </Dialog>
               </div>
             </div>
             <div className="desktop-container-mid">
@@ -189,16 +203,14 @@ function App() {
                 </div>
               </div>
             </div>
-                <Map />
-              <div className="desktop-container-footer">
-                <Socials />
-                <Footer />
-               
-              </div>
+            <Map />
+            <div className="desktop-container-footer">
+              <Socials />
+              <Footer />
             </div>
+          </div>
         </div>
       )}
-      
     </div>
   );
 }
