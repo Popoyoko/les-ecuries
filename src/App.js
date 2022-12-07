@@ -13,6 +13,7 @@ import Footer from "./components/footer";
 
 function App() {
   const isWideViewport = useMatchMedia("(max-width:700px)");
+  const funkExemple = () => console.log("this is an exemple")
   return (
     <div>
       {isWideViewport ? (
@@ -22,7 +23,7 @@ function App() {
             <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
               Réservation en ligne
             </Button>
-            <Button secondary>
+            <Button secondary action={funkExemple}>
               Contactez-nous
               <img src={icon_telephone} className="vector" alt="logo_contactez-nous" />
             </Button>
