@@ -37,22 +37,31 @@ function App() {
             </Button>
             {isDialog && (
               <Dialog>
-                <p>Nous ne pouvons prendre aucune réservation par téléphone.</p>
-                <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
-                  Réservation en ligne
-                </Button>
-                <Button secondary>
-                  07 64 54 09 74
-                  <img
-                    src={icon_telephone}
-                    className="vector"
-                    alt="logo_contactez-nous"
-                  />
-                </Button>
-                <p>Nous répondons également à toutes vos questions par mail:</p>
-                <p>lesecuriesbar@gmail.com</p>
-                <Button secondary action={() => setDialog(false)}>Fermer</Button>
-              </Dialog>
+              <p>
+                Nous ne pouvons prendre aucune réservation par téléphone.
+              </p>
+              <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
+                Réservation en ligne
+              </Button>
+              <Button secondary>
+                07 64 54 09 74
+                <img
+                  src={icon_telephone}
+                  className="vector"
+                  alt="logo_contactez-nous"
+                />
+              </Button>
+              <div className="description">
+                <p>
+                  Nous répondons également à toutes vos questions par
+                  mail:
+                </p>
+                <p id="lien-site">lesecuriesbar@gmail.com</p>
+              </div>
+              <Button secondary action={() => setDialog(false)}>
+                Fermer
+              </Button>
+            </Dialog>
             )}
           </div>
           <div className="description">
@@ -126,7 +135,7 @@ function App() {
                     alt="logo_contactez-nous"
                   />
                 </Button>
-                {isDialog &&
+                {isDialog && (
                   <Dialog>
                     <p>
                       Nous ne pouvons prendre aucune réservation par téléphone.
@@ -142,13 +151,18 @@ function App() {
                         alt="logo_contactez-nous"
                       />
                     </Button>
-                    <p>
-                      Nous répondons également à toutes vos questions par mail:
-                    </p>
-                    <p>lesecuriesbar@gmail.com</p>
-                    <Button secondary action={() => setDialog(false)}>Fermer</Button>
+                    <div className="description">
+                      <p>
+                        Nous répondons également à toutes vos questions par
+                        mail:
+                      </p>
+                      <p id="lien-site">lesecuriesbar@gmail.com</p>
+                    </div>
+                    <Button secondary action={() => setDialog(false)}>
+                      Fermer
+                    </Button>
                   </Dialog>
-                }
+                )}
               </div>
             </div>
             <div className="desktop-container-mid">

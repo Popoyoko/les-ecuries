@@ -1,6 +1,7 @@
 //colors
 $light: #f3f2f7;
 $dark: #08070c;
+$purple: #8470FF;
 
 //font-families
 $FjallaOne: "Fjalla One";
@@ -138,7 +139,9 @@ h6 {
   width: 40%;
 }
 
-
+.desktop-container-top{
+  width: 28rem;
+}
 .desktop-container-bot{
   align-items: center;
 }
@@ -146,4 +149,29 @@ h6 {
   display: flex;
   justify-content: space-between;
   gap: 32px;
+}
+
+a > .button {
+  width: 100%;
+}
+
+.dialog-inner >.button{
+  width: 100%;
+}
+
+.dialog-inner > p{
+  @include paragraph;
+}
+
+#lien-site{
+  color: $purple;
+}
+
+a{
+  text-decoration: none;
+  width: 100%;
+}
+
+a, .button{
+width: 100%;
 }
