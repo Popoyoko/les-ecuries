@@ -50,6 +50,8 @@ function App() {
                   />
                 </Button>
                 <p>Nous répondons également à toutes vos questions par mail:</p>
+                <p>lesecuriesbar@gmail.com</p>
+                <Button secondary action={() => setDialog(false)}>Fermer</Button>
               </Dialog>
             )}
           </div>
@@ -143,6 +145,8 @@ function App() {
                     <p>
                       Nous répondons également à toutes vos questions par mail:
                     </p>
+                    <p>lesecuriesbar@gmail.com</p>
+                    <Button secondary action={() => setDialog(false)}>Fermer</Button>
                   </Dialog>
                 }
               </div>

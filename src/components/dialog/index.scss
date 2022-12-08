@@ -1,0 +1,38 @@
+@import "../../index.scss";
+
+.dialog {
+  position: fixed;
+    top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    color: $light;
+}
+
+.dialog-inner {
+  // position: relative;
+  // padding: 32px;
+  // width: 375px;
+  // height: 366px;
+  // background-color: white;
+  // background-color: #00070c;
+  // color: #f3f2f7;
+  // font-family: $Merriweather;
+
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    padding: 32px;
+    gap: $w1;
+    position: relative;
+}
+
