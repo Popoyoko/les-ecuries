@@ -1,5 +1,4 @@
 import useMatchMedia from "./hooks/useMatchMedia";
-
 import { useState } from "react";
 
 import icon_telephone from "./assets/icon_telephone.png";
@@ -12,11 +11,16 @@ import Slider from "./components/slider";
 import Map from "./components/map";
 import Socials from "./components/socials";
 import Footer from "./components/footer";
-import Dialog from "./components/dialog";
+// import Dialog from "./components/dialog";
 
 function App() {
   const isWideViewport = useMatchMedia("(max-width:700px)");
-  const [isDialog, setDialog] = useState(false);
+
+  const [dialog, setDialog] = useState(false);
+
+  const toggleDialog = () => {
+    setDialog(!dialog);
+  };
 
   return (
     <div>
@@ -27,7 +31,7 @@ function App() {
             <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
               Réservation en ligne
             </Button>
-            <Button secondary action={() => setDialog(true)}>
+            <Button secondary>
               Contactez-nous
               <img
                 src={icon_telephone}
@@ -35,34 +39,6 @@ function App() {
                 alt="logo_contactez-nous"
               />
             </Button>
-            {isDialog && (
-              <Dialog>
-              <p>
-                Nous ne pouvons prendre aucune réservation par téléphone.
-              </p>
-              <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
-                Réservation en ligne
-              </Button>
-              <Button secondary>
-                07 64 54 09 74
-                <img
-                  src={icon_telephone}
-                  className="vector"
-                  alt="logo_contactez-nous"
-                />
-              </Button>
-              <div className="description">
-                <p>
-                  Nous répondons également à toutes vos questions par
-                  mail:
-                </p>
-                <p id="lien-site">lesecuriesbar@gmail.com</p>
-              </div>
-              <Button secondary action={() => setDialog(false)}>
-                Fermer
-              </Button>
-            </Dialog>
-            )}
           </div>
           <div className="description">
             <p>
@@ -135,34 +111,49 @@ function App() {
                     alt="logo_contactez-nous"
                   />
                 </Button>
-                {isDialog && (
-                  <Dialog>
-                    <p>
-                      Nous ne pouvons prendre aucune réservation par téléphone.
-                    </p>
-                    <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
-                      Réservation en ligne
-                    </Button>
-                    <Button secondary>
-                      07 64 54 09 74
-                      <img
-                        src={icon_telephone}
-                        className="vector"
-                        alt="logo_contactez-nous"
-                      />
-                    </Button>
-                    <div className="description">
-                      <p>
-                        Nous répondons également à toutes vos questions par
-                        mail:
-                      </p>
-                      <p id="lien-site">lesecuriesbar@gmail.com</p>
+
+                <>
+                  {dialog && (
+                    <div className="dialog">
+                      <button
+                        className="overlay"
+                        onClick={toggleDialog}
+                        aria-describedby="close-overlay"
+                      ></button>
+
+                      <div className="dialog-inner">
+                        <div className="description">
+                          <p>
+                            Nous ne pouvons prendre aucune réservation par
+                            téléphone.
+                          </p>
+                        </div>
+                        <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
+                          Réservation en ligne
+                        </Button>
+                        <Button secondary>
+                          07 64 54 09 74
+                          <img
+                            src={icon_telephone}
+                            className="vector"
+                            alt="logo_contactez-nous"
+                          />
+                        </Button>
+                        <div className="description">
+                          <p>
+                            Nous répondons également à toutes vos questions par
+                            mail:
+                          </p>
+                          <p id="lien-site">lesecuriesbar@gmail.com</p>
+                        </div>
+                        <Button secondary action={() => setDialog(false)}>
+                          Fermer
+                        </Button>
+                      </div>
                     </div>
-                    <Button secondary action={() => setDialog(false)}>
-                      Fermer
-                    </Button>
-                  </Dialog>
-                )}
+                  )}
+                </>
+                
               </div>
             </div>
             <div className="desktop-container-mid">

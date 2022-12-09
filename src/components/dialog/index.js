@@ -1,15 +1,31 @@
-import React from 'react'
-import "./index.css"
+import React from "react";
+import { useState } from "react";
+import "./index.css";
 
-function Dialog({children}) {
+function Dialog({ children }) {
+  const [dialog, setDialog] = useState(false);
+
+  const toggleDialog = () => {
+    setDialog(!dialog);
+  };
 
   return (
-    <div className='dialog'>
-        <div className='dialog-inner'>
-            {children}
+    <>
+      <button onClick={toggleDialog}>Open</button>
+
+      {dialog && (
+        <div className="dialog">
+          <button
+            className="overlay"
+            onClick={toggleDialog}
+            aria-describedby="close-overlay"
+          ></button>
+
+          <div className="dialog-inner">{children}</div>
         </div>
-    </div>
+      )}
+    </>
   );
 }
 
-export default Dialog
+export default Dialog;

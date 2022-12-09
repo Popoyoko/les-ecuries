@@ -175,3 +175,33 @@ a{
 a, .button{
 width: 100%;
 }
+
+.dialog, .overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay{
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.dialog-inner{
+  position: absolute;
+
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: $w1;
+    width: 24rem;
+    height: auto;
+    background-color: $dark;
+}
