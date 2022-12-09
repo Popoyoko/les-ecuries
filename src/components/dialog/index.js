@@ -1,8 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import "./index.css";
+import Button from "../button";
 
-function Dialog({ children }) {
+function Dialog({ children}) {
   const [dialog, setDialog] = useState(false);
 
   const toggleDialog = () => {
@@ -11,8 +12,7 @@ function Dialog({ children }) {
 
   return (
     <>
-      <button onClick={toggleDialog}>Open</button>
-
+      <Button action={toggleDialog}>open</Button>
       {dialog && (
         <div className="dialog">
           <button
