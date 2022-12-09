@@ -10,10 +10,11 @@ import Slider from "./components/slider";
 import Map from "./components/map";
 import Socials from "./components/socials";
 import Footer from "./components/footer";
+import Dialog from "./components/dialog";
 
 function App() {
   const isWideViewport = useMatchMedia("(max-width:700px)");
-  const funkExemple = () => console.log("this is an exemple")
+
   return (
     <div>
       {isWideViewport ? (
@@ -23,9 +24,13 @@ function App() {
             <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
               Réservation en ligne
             </Button>
-            <Button secondary action={funkExemple}>
+            <Button secondary>
               Contactez-nous
-              <img src={icon_telephone} className="vector" alt="logo_contactez-nous" />
+              <img
+                src={icon_telephone}
+                className="vector"
+                alt="logo_contactez-nous"
+              />
             </Button>
           </div>
           <div className="description">
@@ -53,7 +58,11 @@ function App() {
               href="./assets/Menu-Les-Ecuries.pdf"
             >
               Notre carte
-              <img src={icon_carte} className="vector_1" alt="logo_Notre carte" />
+              <img
+                src={icon_carte}
+                className="vector_1"
+                alt="logo_Notre carte"
+              />
             </Button>
             <Button
               secondary
@@ -95,6 +104,71 @@ function App() {
                     alt="logo_contactez-nous"
                   />
                 </Button>
+                <Dialog>
+                  <div className="description">
+                    <p>
+                      Nous ne pouvons prendre aucune réservation par téléphone.
+                    </p>
+                  </div>
+                  <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
+                    Réservation en ligne
+                  </Button>
+                  <Button secondary>
+                    07 64 54 09 74
+                    <img
+                      src={icon_telephone}
+                      className="vector"
+                      alt="logo_contactez-nous"
+                    />
+                  </Button>
+                  <div className="description">
+                    <p>
+                      Nous répondons également à toutes vos questions par mail:
+                    </p>
+                    <p id="lien-site">lesecuriesbar@gmail.com</p>
+                  </div>
+                </Dialog>
+                {/* <>
+                  {dialog && (
+                    <div className="dialog">
+                      <button
+                        className="overlay"
+                        onClick={toggleDialog}
+                        aria-describedby="close-overlay"
+                      ></button>
+
+                      <div className="dialog-inner">
+                        <div className="description">
+                          <p>
+                            Nous ne pouvons prendre aucune réservation par
+                            téléphone.
+                          </p>
+                        </div>
+                        <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
+                          Réservation en ligne
+                        </Button>
+                        <Button secondary>
+                          07 64 54 09 74
+                          <img
+                            src={icon_telephone}
+                            className="vector"
+                            alt="logo_contactez-nous"
+                          />
+                        </Button>
+                        <div className="description">
+                          <p>
+                            Nous répondons également à toutes vos questions par
+                            mail:
+                          </p>
+                          <p id="lien-site">lesecuriesbar@gmail.com</p>
+                        </div>
+                        <Button secondary action={() => setDialog(false)}>
+                          Fermer
+                        </Button>
+                      </div>
+                    </div>
+                  )}
+                </> */}
               </div>
             </div>
             <div className="desktop-container-mid">
@@ -154,13 +228,12 @@ function App() {
                 </div>
               </div>
             </div>
-                <Map />
-              <div className="desktop-container-footer">
-                <Socials />
-                <Footer />
-               
-              </div>
+            <Map />
+            <div className="desktop-container-footer">
+              <Socials />
+              <Footer />
             </div>
+          </div>
         </div>
       )}
     </div>

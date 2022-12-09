@@ -93,6 +93,10 @@ h6 {
   width: 40%;
 }
 
+.desktop-container-top {
+  width: 28rem;
+}
+
 .desktop-container-bot {
   align-items: center;
 }
@@ -101,6 +105,65 @@ h6 {
   display: flex;
   justify-content: space-between;
   gap: 32px;
+}
+
+a > .button {
+  width: 100%;
+}
+
+.dialog-inner > .button {
+  width: 100%;
+}
+
+.dialog-inner > p {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+}
+
+#lien-site {
+  color: #8470FF;
+}
+
+a {
+  text-decoration: none;
+  width: 100%;
+}
+
+a, .button {
+  width: 100%;
+}
+
+.dialog, .overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.dialog-inner {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: 16px;
+  width: 24rem;
+  height: auto;
+  background-color: #141414;
 }
 
 header {

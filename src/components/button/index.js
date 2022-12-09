@@ -5,7 +5,7 @@ const Button = ({ children, href, secondary, icon, action }) => {
    if (href) {
       return (
          <a href={href}>
-            <button className={classNames('button', { 'secondary': secondary }, { 'rounded': icon })}>{children}</button>
+            <button className={classNames('button', { 'secondary': secondary }, { 'rounded': icon })} onClick={action}>{children}</button>
          </a>
       )
    } else {
