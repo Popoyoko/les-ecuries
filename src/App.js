@@ -1,5 +1,4 @@
 import useMatchMedia from "./hooks/useMatchMedia";
-import { useState } from "react";
 
 import icon_telephone from "./assets/icon_telephone.png";
 import icon_carte from "./assets/icon_carte.png";
@@ -15,12 +14,6 @@ import Dialog from "./components/dialog";
 
 function App() {
   const isWideViewport = useMatchMedia("(max-width:700px)");
-
-  const [dialog, setDialog] = useState(false);
-
-  const toggleDialog = () => {
-    setDialog(!dialog);
-  };
 
   return (
     <div>
@@ -103,7 +96,7 @@ function App() {
                 <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
                   Réservation en ligne
                 </Button>
-                <Button secondary action={toggleDialog}>
+                <Button secondary>
                   Contactez-nous
                   <img
                     src={icon_telephone}

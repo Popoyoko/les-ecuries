@@ -163,7 +163,7 @@ a, .button {
   gap: 16px;
   width: 24rem;
   height: auto;
-  background-color: #08070c;
+  background-color: #141414;
 }
 
 footer {
@@ -214,12 +214,8 @@ h1 {
   font-size: 12px;
   line-height: 15px;
   margin: 0;
-<<<<<<< HEAD
   color: #8470FF;
   text-decoration-line: underline;
-=======
-  color: #dbdbdb;
->>>>>>> origin
 }
 
 /*# sourceMappingURL=index.css.map */
