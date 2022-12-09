@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #08070c;
+  background-color: #141414;
 }
 
 .App {
@@ -20,7 +20,7 @@ h6 {
   font-size: 20px;
   line-height: 25px;
   margin: 0;
-  color: #f3f2f7;
+  color: #dbdbdb;
 }
 
 .buttons {
@@ -38,7 +38,7 @@ h6 {
   font-size: 16px;
   line-height: 28px;
   margin: 0;
-  color: #f3f2f7;
+  color: #dbdbdb;
 }
 
 .timetable > p {
@@ -48,7 +48,7 @@ h6 {
   font-size: 10px;
   line-height: 13px;
   margin: 0;
-  color: #f3f2f7;
+  color: #dbdbdb;
 }
 
 @media screen and (min-width: 700px) {
@@ -109,14 +109,14 @@ a {
 
 .button {
   width: 100%;
-  background-color: #f3f2f7;
+  background-color: #dbdbdb;
   font-family: "Fjalla One";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
   margin: 0;
-  color: #08070c;
+  color: #141414;
   border: none;
   padding: 16px;
   display: flex;
@@ -125,16 +125,22 @@ a {
   gap: 10px;
   cursor: pointer;
 }
+.button:hover {
+  background-color: #fff;
+}
 .button.rounded {
   border-radius: 100%;
   width: 2.5rem;
   height: 2.5rem;
 }
 .button.secondary {
-  background-color: #08070c;
-  color: #f3f2f7;
-  outline: #f3f2f7 solid 2px;
+  background-color: #141414;
+  color: #dbdbdb;
+  outline: #dbdbdb solid 2px;
   outline-offset: -2px;
+}
+.button.secondary:hover {
+  background-color: #000;
 }
 
 @media screen and (min-width: 700px) {
