@@ -95,7 +95,7 @@ function App() {
               secondary
               href="https://www.facebook.com/lesecuriesbar/events"
             >
-              Programmation
+              Notre Facebook
               <img
                 src={icon_facebook}
                 className="vector_2"
