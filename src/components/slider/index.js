@@ -8,16 +8,17 @@ import "swiper/css";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 
-import image_coktail from "../../assets/image_coktail.png";
-import image_dj from "../../assets/image_dj.png";
-import image_food from "../../assets/image_food.png";
+import sliderimage from "../../assets/slider/index.json"
+// import image_coktail from "../../assets/image_coktail.png";
+// import image_dj from "../../assets/image_dj.png";
+// import image_food from "../../assets/image_food.png";
 
 import arrow_left from "../../assets/arrow-left.png";
 import arrow_right from "../../assets/arrow-right.png";
 
 function Slider() {
   const swiperRef = useRef();
-
+console.log(sliderimage);
   return (
     <>
       <div className="slider">
