@@ -1,5 +1,5 @@
 import "./index.css";
-import React, { useRef } from "react";
+import React, { useRef} from "react";
 
 import { Pagination } from "swiper";
 
@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 
-import sliderimage from "../../assets/slider/index.json"
+// import sliderimage from "../../assets/slider/index.json"
 // import image_coktail from "../../assets/image_coktail.png";
 // import image_dj from "../../assets/image_dj.png";
 // import image_food from "../../assets/image_food.png";
@@ -18,7 +18,27 @@ import arrow_right from "../../assets/arrow-right.png";
 
 function Slider() {
   const swiperRef = useRef();
-console.log(sliderimage);
+// console.log(sliderimage);
+
+const elements = [
+  {
+    path:"https://imgs.search.brave.com/5t3EZMbzWODFcdFdqSZinkvZ3m1CXYraejNVJmcIrjM/rs:fit:597:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5C/MWg4Vm5ucEc0bWNu/MU12ejZUV2V3SGFG/NCZwaWQ9QXBp",
+    title:"coktail",
+    description:"lorem"
+},
+{
+    "path":"https://imgs.search.brave.com/5t3EZMbzWODFcdFdqSZinkvZ3m1CXYraejNVJmcIrjM/rs:fit:597:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5C/MWg4Vm5ucEc0bWNu/MU12ejZUV2V3SGFG/NCZwaWQ9QXBp",
+    "title":"dj",
+    "description":"lorem"
+},
+{
+    "path":"https://imgs.search.brave.com/5t3EZMbzWODFcdFdqSZinkvZ3m1CXYraejNVJmcIrjM/rs:fit:597:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5C/MWg4Vm5ucEc0bWNu/MU12ejZUV2V3SGFG/NCZwaWQ9QXBp",
+    "title":"food",
+    "description":"lorem"
+}
+]
+
+console.log(elements);
   return (
     <>
       <div className="slider">
@@ -38,7 +58,12 @@ console.log(sliderimage);
             prevEl: ".review-swiper-button-prev",
           }}
         >
-          <SwiperSlide className="slide">
+          {elements.map((object) => {
+            <SwiperSlide className="slide">
+            <img src={object.path} alt="image_slider"></img>
+          </SwiperSlide>
+          })}
+          {/* <SwiperSlide className="slide">
             <img src={image_coktail} alt="image_slider"></img>
           </SwiperSlide>
           <SwiperSlide className="slide">
@@ -46,11 +71,19 @@ console.log(sliderimage);
           </SwiperSlide>
           <SwiperSlide className="slide">
             <img src={image_food} alt="image_slider"></img>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
 
         <div className="container-bot-slider">
+          {elements.map((object) => {
           <div className="description">
+            <h6>{object.title}</h6>
+            <p>
+              {object.description}
+            </p>
+          </div>
+          })}
+          {/* <div className="description">
             <h6>Notre burger accompagné de ses frites</h6>
             <p>
               Lorem ipsum dolor sit amet consectetur. Tempor interdum sit non
@@ -58,7 +91,7 @@ console.log(sliderimage);
               Ornare vel id ac justo. Turpis fringilla nisl augue id tortor
               sollicitudin.
             </p>
-          </div>
+          </div> */}
 
           <div className="navigation">
             <button
