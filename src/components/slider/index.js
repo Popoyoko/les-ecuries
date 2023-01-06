@@ -38,7 +38,12 @@ console.log(sliderimage);
             prevEl: ".review-swiper-button-prev",
           }}
         >
-          <SwiperSlide className="slide">
+          {sliderimage.map((object) => {
+            <SwiperSlide className="slide">
+            <img src={object.path} alt="image_slider"></img>
+          </SwiperSlide>
+          })}
+          {/* <SwiperSlide className="slide">
             <img src={image_coktail} alt="image_slider"></img>
           </SwiperSlide>
           <SwiperSlide className="slide">
@@ -46,11 +51,19 @@ console.log(sliderimage);
           </SwiperSlide>
           <SwiperSlide className="slide">
             <img src={image_food} alt="image_slider"></img>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
 
         <div className="container-bot-slider">
+          {sliderimage.map((object) => {
           <div className="description">
+            <h6>{object.title}</h6>
+            <p>
+              {object.description}
+            </p>
+          </div>
+          })}
+          {/* <div className="description">
             <h6>Notre burger accompagné de ses frites</h6>
             <p>
               Lorem ipsum dolor sit amet consectetur. Tempor interdum sit non
@@ -58,7 +71,7 @@ console.log(sliderimage);
               Ornare vel id ac justo. Turpis fringilla nisl augue id tortor
               sollicitudin.
             </p>
-          </div>
+          </div> */}
 
           <div className="navigation">
             <button
