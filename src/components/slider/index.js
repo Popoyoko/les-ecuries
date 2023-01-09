@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 
-// import sliderimage from "../../assets/slider/index.json"
+import sliderimage from "../../assets/slider/index.json"
 // import image_coktail from "../../assets/image_coktail.png";
 // import image_dj from "../../assets/image_dj.png";
 // import image_food from "../../assets/image_food.png";
@@ -20,25 +20,7 @@ function Slider() {
   const swiperRef = useRef();
 // console.log(sliderimage);
 
-const elements = [
-  {
-    path:"https://imgs.search.brave.com/5t3EZMbzWODFcdFdqSZinkvZ3m1CXYraejNVJmcIrjM/rs:fit:597:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5C/MWg4Vm5ucEc0bWNu/MU12ejZUV2V3SGFG/NCZwaWQ9QXBp",
-    title:"coktail",
-    description:"lorem"
-},
-{
-    "path":"https://imgs.search.brave.com/5t3EZMbzWODFcdFdqSZinkvZ3m1CXYraejNVJmcIrjM/rs:fit:597:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5C/MWg4Vm5ucEc0bWNu/MU12ejZUV2V3SGFG/NCZwaWQ9QXBp",
-    "title":"dj",
-    "description":"lorem"
-},
-{
-    "path":"https://imgs.search.brave.com/5t3EZMbzWODFcdFdqSZinkvZ3m1CXYraejNVJmcIrjM/rs:fit:597:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5C/MWg4Vm5ucEc0bWNu/MU12ejZUV2V3SGFG/NCZwaWQ9QXBp",
-    "title":"food",
-    "description":"lorem"
-}
-]
-
-console.log(elements);
+console.log(sliderimage);
   return (
     <>
       <div className="slider">
@@ -58,11 +40,11 @@ console.log(elements);
             prevEl: ".review-swiper-button-prev",
           }}
         >
-          {elements.map((object) => {
+          {sliderimage.map(object => (
             <SwiperSlide className="slide">
             <img src={object.path} alt="image_slider"></img>
           </SwiperSlide>
-          })}
+          ))}
           {/* <SwiperSlide className="slide">
             <img src={image_coktail} alt="image_slider"></img>
           </SwiperSlide>
@@ -75,7 +57,7 @@ console.log(elements);
         </Swiper>
 
         <div className="container-bot-slider">
-          {elements.map((object) => {
+          {sliderimage.map((object) => {
           <div className="description">
             <h6>{object.title}</h6>
             <p>
