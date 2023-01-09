@@ -45,6 +45,7 @@ console.log(sliderimage);
             <img src={object.path} alt="image_slider"></img>
           </SwiperSlide>
           ))}
+          
           {/* <SwiperSlide className="slide">
             <img src={image_coktail} alt="image_slider"></img>
           </SwiperSlide>
