@@ -58,14 +58,14 @@ console.log(sliderimage);
         </Swiper>
 
         <div className="container-bot-slider">
-          {sliderimage.map((object) => {
+          {sliderimage.map(object => (
           <div className="description">
             <h6>{object.title}</h6>
             <p>
               {object.description}
             </p>
           </div>
-          })}
+          ))}
           {/* <div className="description">
             <h6>Notre burger accompagné de ses frites</h6>
             <p>
