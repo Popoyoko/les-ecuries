@@ -8,7 +8,7 @@ gap: 32px;
 padding: 32px;
 }
 
-.container-top-slider {
+.swiper, .container-slider {
   width: 100%;
 
 }
@@ -29,7 +29,7 @@ padding: 32px;
   --swiper-theme-color: #f3f2f7;
 }
 
-.container-bot-slider {
+.slider-bot {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -45,7 +45,7 @@ padding: 32px;
   gap: 10px;
 }
 
-.container-bot-slider > .description > p {
+.slider-bot > .description > p {
   @include small;
 }
 

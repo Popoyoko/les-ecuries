@@ -111,7 +111,7 @@ h6 {
   padding: 32px;
 }
 
-.container-top-slider {
+.swiper, .container-slider {
   width: 100%;
 }
 
@@ -131,7 +131,7 @@ h6 {
   --swiper-theme-color: #f3f2f7;
 }
 
-.container-bot-slider {
+.slider-bot {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -147,7 +147,7 @@ h6 {
   gap: 10px;
 }
 
-.container-bot-slider > .description > p {
+.slider-bot > .description > p {
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 400;
