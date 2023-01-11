@@ -9,6 +9,12 @@ import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 
 import sliderimage from "../../assets/slider/index.json";
+// const imagesContext = require.context('../../assets/slider', true, /\.(png|jpg|jpeg|svg)$/);
+const basepath = "../../assets/slider/";
+// sliderimage.map((image) => {
+//   import `${image.name}` from `${basepath}${image.name}`
+// })
+
 // import image_coktail from "../../assets/image_coktail.png";
 // import image_dj from "../../assets/image_dj.png";
 // import image_food from "../../assets/image_food.png";
@@ -19,7 +25,7 @@ import arrow_right from "../../assets/arrow-right.png";
 function Slider() {
   const swiperRef = useRef();
   // console.log(sliderimage);
-  const basepath = "../../assets/slider/";
+  
 
   const [item, setItem] =  useState(0);
   const incrementItem =() => {
