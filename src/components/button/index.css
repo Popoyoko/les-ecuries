@@ -76,7 +76,8 @@ h6 {
   width: 100%;
 }
 
-.desktop-container-mid > *, .desktop-container-bot > * {
+.desktop-container-mid > *,
+.desktop-container-bot > * {
   display: flex;
   flex-direction: column;
 }
@@ -85,7 +86,8 @@ h6 {
   gap: 16px;
 }
 
-.desktop-container-slider, .desktop-container-footer {
+.desktop-container-slider,
+.desktop-container-footer {
   width: 60%;
 }
 
@@ -125,7 +127,7 @@ a > .button {
 }
 
 #lien-site {
-  color: #8470FF;
+  color: #8470ff;
 }
 
 a {
@@ -133,11 +135,13 @@ a {
   width: 100%;
 }
 
-a, .button {
+a,
+.button {
   width: 100%;
 }
 
-.dialog, .overlay {
+.dialog,
+.overlay {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -204,6 +208,9 @@ a {
 }
 .button.secondary:hover {
   background-color: #000;
+}
+.button.cubic {
+  width: auto;
 }
 
 @media screen and (min-width: 700px) {

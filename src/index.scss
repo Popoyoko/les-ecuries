@@ -1,5 +1,5 @@
 //colors
-$purple: #8470FF;
+$purple: #8470ff;
 $lighter: #fff;
 $light: #dbdbdb;
 $dark: #141414;
@@ -126,30 +126,32 @@ h6 {
   width: 100%;
 }
 
-.desktop-container-mid > *,.desktop-container-bot > * {
+.desktop-container-mid > *,
+.desktop-container-bot > * {
   display: flex;
   flex-direction: column;
 }
 
-.desktop-container-information{
+.desktop-container-information {
   gap: $w1;
 }
 
-.desktop-container-slider, .desktop-container-footer{
+.desktop-container-slider,
+.desktop-container-footer {
   width: 60%;
 }
 
-.desktop-container-information{
+.desktop-container-information {
   width: 40%;
 }
 
-.desktop-container-top{
+.desktop-container-top {
   width: 28rem;
 }
-.desktop-container-bot{
+.desktop-container-bot {
   align-items: center;
 }
-.desktop-container-footer{
+.desktop-container-footer {
   display: flex;
   justify-content: space-between;
   gap: 32px;
@@ -159,28 +161,30 @@ a > .button {
   width: 100%;
 }
 
-.dialog-inner >.button{
+.dialog-inner > .button {
   width: 100%;
 }
 
-.dialog-inner > p{
+.dialog-inner > p {
   @include paragraph;
 }
 
-#lien-site{
+#lien-site {
   color: $purple;
 }
 
-a{
+a {
   text-decoration: none;
   width: 100%;
 }
 
-a, .button{
-width: 100%;
+a,
+.button {
+  width: 100%;
 }
 
-.dialog, .overlay{
+.dialog,
+.overlay {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -190,22 +194,22 @@ width: 100%;
   align-items: center;
 }
 
-.overlay{
+.overlay {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
 }
 
-.dialog-inner{
+.dialog-inner {
   position: absolute;
 
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 32px;
-    gap: $w1;
-    width: 24rem;
-    height: auto;
-    background-color: $dark;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: $w1;
+  width: 24rem;
+  height: auto;
+  background-color: $dark;
 }

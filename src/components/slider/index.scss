@@ -1,38 +1,51 @@
 @import "../../index.scss";
 
 .slider {
+width: 100%;
+padding: 32px;
+}
+
+.swiper{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 32px;
 }
 
-.container-top-slider {
+.swiper, .container-slider {
   width: 100%;
 }
 
-.container-top-slider > img {
+.slide > img {
   height: auto;
   width: 100%;
+  min-height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
-.container-bot-slider {
+.slide-container{
+  width: 80%;
+}
+
+.slider-bot {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: flex-start;
   padding: 0px;
   gap: 32px;
 }
 
-.description {
+.slider-bot > .description {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 10px;
+  width: 20rem;
 }
 
-.container-bot-slider > .description > p {
+.slider-bot > .description > p {
   @include small;
 }
 
@@ -42,12 +55,12 @@
   align-items: flex-start;
   padding: 0px;
   gap: 10px;
+  width: 7.5rem;
 }
 
-.navigation > button {
-  padding: $w1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+@media  screen and (min-width: 700px) {
+  .slider{
+    width: 35rem;
+
+  }
 }

@@ -13,37 +13,35 @@ import Footer from "./components/footer";
 import AppModal from "./components/modal";
 import { useState } from "react";
 
-
 function App() {
   const isWideViewport = useMatchMedia("(max-width:700px)");
   const [isAppModal, setAppModal] = useState(false);
 
   return (
     <>
-        <AppModal isOpen={isAppModal} onRequestClose={() => setAppModal(!isAppModal)}>
-          <div className="description">
-            <p>
-              Nous ne pouvons prendre aucune réservation par téléphone.
-            </p>
-          </div>
-          <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
-            Réservation en ligne
-          </Button>
-          <Button secondary >
-            07 64 54 09 74
-            <img
-              src={icon_telephone}
-              className="vector"
-              alt="logo_contactez-nous"
-            />
-          </Button>
-          <div className="description">
-            <p>
-              Nous répondons également à toutes vos questions par mail:
-            </p>
-            <p id="lien-site">lesecuriesbar@gmail.com</p>
-          </div>
-        </AppModal>
+      <AppModal
+        isOpen={isAppModal}
+        onRequestClose={() => setAppModal(!isAppModal)}
+      >
+        <div className="description">
+          <p>Nous ne pouvons prendre aucune réservation par téléphone.</p>
+        </div>
+        <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
+          Réservation en ligne
+        </Button>
+        <Button secondary>
+          07 64 54 09 74
+          <img
+            src={icon_telephone}
+            className="vector"
+            alt="logo_contactez-nous"
+          />
+        </Button>
+        <div className="description">
+          <p>Nous répondons également à toutes vos questions par mail:</p>
+          <p id="lien-site">lesecuriesbar@gmail.com</p>
+        </div>
+      </AppModal>
       {isWideViewport ? (
         <div className="App">
           <Header />
@@ -80,10 +78,7 @@ function App() {
             </p>
           </div>
           <div className="buttons">
-            <Button
-              secondary
-              href="./assets/Menu-Les-Ecuries.pdf"
-            >
+            <Button secondary href="./assets/Menu-Les-Ecuries.pdf">
               Notre carte
               <img
                 src={icon_carte}
@@ -134,9 +129,8 @@ function App() {
               </div>
             </div>
             <div className="desktop-container-mid">
-              <div className="desktop-container-slider">
-                <Slider />
-              </div>
+              <Slider />
+
               <div className="desktop-container-information">
                 <div className="description">
                   <p>
