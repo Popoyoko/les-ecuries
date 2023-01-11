@@ -159,10 +159,10 @@ function App() {
                   </p>
                 </div>
                 <div className="buttons">
-                  <Button
-                    secondary
-                    href="http://lesecuries-bar.com/wp-content/uploads/2015/06/Menu-Les-E%CC%81curies-Site.pdf"
-                  >
+                <Button
+              secondary
+              href="./assets/Menu-Les-Ecuries.pdf"
+            >
                     Notre carte
                     <img
                       src={icon_carte}
