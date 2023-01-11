@@ -15,6 +15,7 @@ import arrow_right from "../../assets/arrow-right.png";
 import Button from "../button";
 
 const Slider = () => {
+  
   const swiperRef = useRef();
 
   const [images, setImages] = useState([]);
@@ -48,9 +49,12 @@ const Slider = () => {
   return (
     <>
       <div className="slider">
+        
         <Swiper
           className="swiper"
+          loop={true}
           // install Swiper modules
+          
           modules={[Pagination]}
           spaceBetween={20}
           slidesPerView={1}
@@ -59,6 +63,7 @@ const Slider = () => {
           onBeforeInit={(swiper) => {
             swiperRef.current = swiper;
           }}
+                              
           navigation={{
             nextEl: ".review-swiper-button-next",
             prevEl: ".review-swiper-button-prev",
