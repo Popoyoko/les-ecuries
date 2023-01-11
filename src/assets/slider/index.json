@@ -1,16 +1,16 @@
 [{
     "name":"image_coktail.png",
-    "title":"coktail",
-    "description":"lorem"
+    "title":"LES COCKTAILS SONT NOTRE IDENTITÉ",
+    "description":"Un bar animé, un comptoir en bois foncé et un éclairage tamisé. Des verres de bière posés sur le comptoir, chacun rempli à ras bord d'une mousse épaisse et dorée."
 },
 {
     "name":"image_dj.png",
-    "title":"dj",
-    "description":"lorem"
+    "title":"UN DJ ENFLAMMÉ",
+    "description":"Bondé et animé, avec un DJ qui se tient derrière un ensemble de platines de mixage. "
 },
 {
     "name":"image_food.png",
-    "title":"food",
-    "description":"lorem"
+    "title":"UNE BURGER GARNI SUBLIMÉ",
+    "description":"Un hamburger généreux et appétissant. On peut imaginer que c'est un plat parfait pour accompagner une soirée entre amis ou pour se régaler après une longue journée de travail."
 }]
 

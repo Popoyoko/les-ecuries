@@ -105,10 +105,13 @@ h6 {
 
 .slider {
   width: 100%;
+  padding: 32px;
+}
+
+.swiper {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 32px;
 }
 
 .swiper, .container-slider {
@@ -127,24 +130,22 @@ h6 {
   width: 80%;
 }
 
-.swiper-pagination {
-  --swiper-theme-color: #f3f2f7;
-}
-
 .slider-bot {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: flex-start;
   padding: 0px;
   gap: 32px;
 }
 
-.description {
+.slider-bot > .description {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 10px;
+  width: 20rem;
 }
 
 .slider-bot > .description > p {
@@ -162,14 +163,7 @@ h6 {
   align-items: flex-start;
   padding: 0px;
   gap: 10px;
-}
-
-.navigation > button {
-  padding: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  width: 7.5rem;
 }
 
 @media screen and (min-width: 700px) {

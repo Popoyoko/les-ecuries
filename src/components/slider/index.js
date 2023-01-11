@@ -1,5 +1,5 @@
 import "./index.css";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 import { Pagination } from "swiper";
 
@@ -9,38 +9,42 @@ import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 
 import sliderimage from "../../assets/slider/index.json";
-// const imagesContext = require.context('../../assets/slider', true, /\.(png|jpg|jpeg|svg)$/);
-const basepath = "../../assets/slider/";
-// sliderimage.map((image) => {
-//   import `${image.name}` from `${basepath}${image.name}`
-// })
-
-// import image_coktail from "../../assets/image_coktail.png";
-// import image_dj from "../../assets/image_dj.png";
-// import image_food from "../../assets/image_food.png";
 
 import arrow_left from "../../assets/arrow-left.png";
 import arrow_right from "../../assets/arrow-right.png";
+import Button from "../button";
 
-function Slider() {
+const Slider = () => {
   const swiperRef = useRef();
-  // console.log(sliderimage);
-  
 
-  const [item, setItem] =  useState(0);
-  const incrementItem =() => {
-    swiperRef.current?.slidePrev()
-    item < sliderimage.length &&
-      setItem(item + 1);
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    const importAll = async (r) => {
+      r.keys().forEach(async (key) => {
+        const img = await r(key);
+        setImages((images) => [...images, img]);
+      });
+    };
+    importAll(
+      require.context("../../assets/slider/", false, /\.(png|jpe?g|svg)$/)
+    );
+    console.log(item);
+  }, []);
+
+  const [item, setItem] = useState(0);
+
+  const incrementItem = () => {
+    swiperRef.current?.slideNext();
+    item < sliderimage.length - 1 ? setItem(item + 1) : setItem(0);
   };
 
-  const decrementItem =() => {
-    swiperRef.current?.slideNext()
-    item > sliderimage.length &&
-      setItem(item - 1);
+  const decrementItem = () => {
+    swiperRef.current?.slidePrev();
+    item > 0 ? setItem(item - 1) : setItem(sliderimage.length - 1);
+    console.log(item);
   };
 
-  console.log(sliderimage);
   return (
     <>
       <div className="slider">
@@ -51,7 +55,7 @@ function Slider() {
           spaceBetween={20}
           slidesPerView={1}
           // navigation
-          pagination={{ clickable: true }}
+  
           onBeforeInit={(swiper) => {
             swiperRef.current = swiper;
           }}
@@ -60,41 +64,38 @@ function Slider() {
             prevEl: ".review-swiper-button-prev",
           }}
         >
-
-
-          
-          {sliderimage.map((object) => (
-            <SwiperSlide className="slide">
-              <img src={basepath + object.name} alt="image_slider"></img>
-            </SwiperSlide>
-          ))}
+          {images.map((image, index) => {
+            return (
+              <SwiperSlide className="slide" key={index}>
+                <img src={image} alt={image}></img>
+              </SwiperSlide>
+            );
+          })}
           <div className="slider-bot">
-            
-              <div className="description">
-                <h6>{sliderimage[item].title}</h6>
-                <p>{sliderimage[item].description}</p>
-              </div>
-            
+            <div className="description">
+              <h6>{sliderimage[item].title}</h6>
+              <p>{sliderimage[item].description}</p>
+            </div>
 
             <div className="navigation">
-              <button
-                className="button cubic review-swiper-button-next"
-                onClick={() => incrementItem()}
+              <Button
+                className={"review-swiper-button-prev"}
+                action={() => decrementItem()}
               >
                 <img src={arrow_left} alt="arrow_left" />
-              </button>
-              <button
-                className="button cubic review-swiper-button-prev"
-                onClick={() => decrementItem()}
+              </Button>
+              <Button
+                className={"review-swiper-button-next"}
+                action={() => incrementItem()}
               >
                 <img src={arrow_right} alt="arrow_right" />
-              </button>
+              </Button>
             </div>
           </div>
         </Swiper>
       </div>
     </>
   );
-}
+};
 
 export default Slider;
