@@ -1,24 +1,15 @@
 import "./index.css";
 const classNames = require("classnames");
 
-const Button = ({
-  children,
-  href,
-  secondary,
-  icon,
-  cubic,
-  action,
-  ...rest
-}) => {
+const Button = ({ children, href, secondary, icon, action, ...rest }) => {
   if (href) {
     return (
-      <a href={href} {...rest}>
+      <a className="buttonlink" href={href} {...rest}>
         <button
           className={classNames(
             "button",
             { secondary: secondary },
-            { rounded: icon },
-            { cubic: cubic }
+            { rounded: icon }
           )}
         >
           {children}
@@ -32,8 +23,7 @@ const Button = ({
         className={classNames(
           "button",
           { secondary: secondary },
-          { rounded: icon },
-          { cubic: cubic }
+          { rounded: icon }
         )}
         onClick={action}
       >

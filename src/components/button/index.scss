@@ -1,11 +1,8 @@
-@import '../../index.scss';
+@import "../../index.scss";
 
-a{
+a,
+.button {
     text-decoration: none;
-}
-
-.button{
-    width: 100%;
     background-color: $light;
     @include label;
     color: $dark;
@@ -16,30 +13,36 @@ a{
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    &:hover{
+    &:hover {
         background-color: $lighter;
     }
-    &.rounded{
+    &.rounded {
         border-radius: 100%;
         width: 2.5rem;
         height: 2.5rem;
     }
-    &.secondary{
+    &.secondary {
         background-color: $dark;
         color: $light;
         outline: $light solid 2px;
         outline-offset: -2px;
-        &:hover{
+        &:hover {
             background-color: $darker;
         }
     }
-    &.cubic{
-        width: auto;
-    }
 }
 
-@media  screen and (min-width: 700px) {
-    .button{
-        width: 12rem;
+a {
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    background-color: unset;
+    &:hover {
+        background-color: unset;
     }
-  }
+    button {
+        width: 100%;
+    }
+}
