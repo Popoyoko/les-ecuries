@@ -4,37 +4,38 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 128px 0px;
-  gap: 64px;
-  height: 29rem;
-  flex: none;
+  justify-content: stretch;
+  box-sizing: border-box;
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    text-align: center;
+    gap: 64px;
+    margin: 128px 0;
+    .logo {
+      width: 96px;
+    }
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
 }
 
-.information-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  width: 251px;
-  height: 4.25rem;
-  flex: none;
-  order: 1;
-  flex-grow: var(--flex_grow_none);
-}
-
-#les-ecuries {
-  @include heading;
-  color: $light;
-}
-
-.place {
-  @include paragraph;
-  color: $light;
-}
-
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
   header {
-    height: auto;
+    align-items: stretch;
+    justify-content: center;
+    .top {
+      margin: 64px 0;
+    }
+    .buttons {
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: stretch;
+    }
   }
 }

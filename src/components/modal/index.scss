@@ -1,26 +1,35 @@
 @import "../../index.scss";
 
 @keyframes fadeInMobile {
-  from {transform: translate(-50%, -90%);}
-  to {transform: translate(-50%, -100%);}
+  from {
+    transform: translate(-50%, -90%);
+  }
+  to {
+    transform: translate(-50%, -100%);
+  }
 }
 
 @keyframes fadeInDesktop {
-  from {    transform: translate(-50%, -40%);}
-  to {    transform: translate(-50%, -50%);}
+  from {
+    transform: translate(-50%, -40%);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
 }
 
-.overlay{
+.overlay {
   cursor: pointer;
 }
 
 .modal {
   .content {
+    position: fixed;
+    z-index: 10;
     cursor: default;
-    position: absolute;
     display: flex;
     flex-direction: column;
-    padding: 2*$w1;
+    padding: 2 * $w1;
     background: $darker;
     gap: $w1;
     transform: translate(-50%, -50%);

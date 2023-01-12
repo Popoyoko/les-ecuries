@@ -15,7 +15,6 @@ import arrow_right from "../../assets/arrow-right.png";
 import Button from "../button";
 
 const Slider = () => {
-  
   const swiperRef = useRef();
 
   const [images, setImages] = useState([]);
@@ -30,10 +29,9 @@ const Slider = () => {
     importAll(
       require.context("../../assets/slider/", false, /\.(png|jpe?g|svg)$/)
     );
-    console.log(item);
   }, []);
 
-  const [item, setItem] = useState(0);
+  const [item, setItem] = useState(2);
 
   const incrementItem = () => {
     swiperRef.current?.slideNext();
@@ -43,30 +41,27 @@ const Slider = () => {
   const decrementItem = () => {
     swiperRef.current?.slidePrev();
     item > 0 ? setItem(item - 1) : setItem(sliderimage.length - 1);
-    console.log(item);
   };
 
   return (
     <>
       <div className="slider">
-        
         <Swiper
           className="swiper"
           loop={true}
           // install Swiper modules
-          
+
           modules={[Pagination]}
           spaceBetween={20}
           slidesPerView={1}
           // navigation
-  
+
           onBeforeInit={(swiper) => {
             swiperRef.current = swiper;
           }}
-                              
           navigation={{
-            nextEl: ".review-swiper-button-next",
-            prevEl: ".review-swiper-button-prev",
+            nextEl: ".swiper-next",
+            prevEl: ".swiper-prev",
           }}
         >
           {images.map((image, index) => {
@@ -76,23 +71,17 @@ const Slider = () => {
               </SwiperSlide>
             );
           })}
-          <div className="slider-bot">
-            <div className="description">
-              <h6>{sliderimage[item].title}</h6>
+          <div className="footer">
+            <div className="infos">
+              <h3 className="title">{sliderimage[item].title}</h3>
               <p>{sliderimage[item].description}</p>
             </div>
 
             <div className="navigation">
-              <Button
-                className={"review-swiper-button-prev"}
-                action={() => decrementItem()}
-              >
+              <Button className={"swiper-prev"} action={() => decrementItem()}>
                 <img src={arrow_left} alt="arrow_left" />
               </Button>
-              <Button
-                className={"review-swiper-button-next"}
-                action={() => incrementItem()}
-              >
+              <Button className={"swiper-next"} action={() => incrementItem()}>
                 <img src={arrow_right} alt="arrow_right" />
               </Button>
             </div>

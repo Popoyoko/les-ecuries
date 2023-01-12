@@ -1,173 +1,74 @@
 body {
   margin: 0;
   background-color: #141414;
+  color: #dbdbdb;
 }
 
 .App {
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
-  padding: 32px;
+  align-items: stretch;
+  justify-content: stretch;
+  gap: 128px;
+  padding: 128px;
   margin: 0 auto;
 }
 
-h6 {
-  font-family: "Fjalla One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  margin: 0;
-  color: #dbdbdb;
-}
-
-.buttons {
+section {
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  gap: 32px;
+}
+section .sub {
+  display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 100%;
 }
 
-.description > p {
+p {
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   margin: 0;
-  color: #dbdbdb;
+  padding: 0;
+  max-width: 45ch;
 }
-
-.timetable > p {
+p.small {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0;
+}
+p.smaller {
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
   margin: 0;
-  color: #dbdbdb;
 }
 
-@media screen and (min-width: 700px) {
-  .App {
-    flex-direction: none;
-    gap: 128px;
-    padding: 128px;
-    width: 60rem;
-    justify-content: center;
-  }
-  .buttons {
-    flex-direction: row;
-  }
-  .socials-button {
-    gap: 2rem;
-  }
-}
-.desktop-container-mid,
-.desktop-container-bot {
+.buttons {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 64px;
-  width: 100%;
-}
-
-.desktop-container-mid > *,
-.desktop-container-bot > * {
-  display: flex;
-  flex-direction: column;
-}
-
-.desktop-container-information {
+  flex-wrap: wrap;
   gap: 16px;
 }
 
-.desktop-container-slider,
-.desktop-container-footer {
-  width: 60%;
-}
-
-.desktop-container-information {
-  width: 40%;
-}
-
-.desktop-container-top {
-  width: 28rem;
-}
-
-.desktop-container-bot {
-  align-items: center;
-}
-
-.desktop-container-footer {
-  display: flex;
-  justify-content: space-between;
-  gap: 32px;
-}
-
-a > .button {
-  width: 100%;
-}
-
-.dialog-inner > .button {
-  width: 100%;
-}
-
-.dialog-inner > p {
-  font-family: "Merriweather";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  margin: 0;
-}
-
-#lien-site {
-  color: #8470ff;
-}
-
-a {
-  text-decoration: none;
-  width: 100%;
-}
-
-a,
-.button {
-  width: 100%;
-}
-
-.dialog,
-.overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-}
-
-.dialog-inner {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 32px;
-  gap: 16px;
-  width: 24rem;
-  height: auto;
-  background-color: #141414;
+@media screen and (max-width: 700px) {
+  .App {
+    padding: 32px;
+    gap: 32px;
+  }
+  .buttons {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

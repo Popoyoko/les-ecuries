@@ -1,66 +1,61 @@
 @import "../../index.scss";
 
 .slider {
-width: 100%;
-padding: 32px;
+  .swiper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .swiper,
+  .container-slider {
+    width: 100%;
+  }
+  .slide {
+    img {
+      height: auto;
+      width: 100%;
+      min-height: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+  }
+  .slide-container {
+    width: 80%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+  }
+  .title {
+    @include label;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 20rem;
+  }
+  .description > p {
+    @include small;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 7.5rem;
+  }
 }
 
-.swiper{
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.swiper, .container-slider {
-  width: 100%;
-}
-
-.slide > img {
-  height: auto;
-  width: 100%;
-  min-height: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-}
-
-.slide-container{
-  width: 80%;
-}
-
-.slider-bot {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 32px;
-}
-
-.slider-bot > .description {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 10px;
-  width: 20rem;
-}
-
-.slider-bot > .description > p {
-  @include small;
-}
-
-.navigation {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 10px;
-  width: 7.5rem;
-}
-
-@media  screen and (min-width: 700px) {
-  .slider{
-    width: 35rem;
-
+@media screen and (min-width: 700px) {
+  .slider {
+    width: 50%;
   }
 }
