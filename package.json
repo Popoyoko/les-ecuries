@@ -1,12 +1,14 @@
 {
-  "name": "lesecuries",
+  "name": "les-ecuries",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/Popoyoko/LesEcuries",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "classnames": "^2.3.2",
+    "gh-pages": "^4.0.0",
     "nodemon": "^2.0.20",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -20,6 +22,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -54,7 +58,6 @@
   "bugs": {
     "url": "https://github.com/Popoyoko/LesEcuries/issues"
   },
-  "homepage": "https://github.com/Popoyoko/LesEcuries#readme",
   "devDependencies": {
     "eslint": "^8.28.0",
     "eslint-plugin-jsx-a11y": "^6.6.1"
