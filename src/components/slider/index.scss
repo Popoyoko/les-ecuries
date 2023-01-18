@@ -1,6 +1,8 @@
 @import "../../index.scss";
 
 .slider {
+  display: flex;
+  max-width: 512px;
   .swiper {
     display: flex;
     flex-direction: column;

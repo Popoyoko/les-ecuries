@@ -70,6 +70,10 @@ p.smaller {
     flex-direction: column;
   }
 }
+.slider {
+  display: flex;
+  max-width: 512px;
+}
 .slider .swiper {
   display: flex;
   flex-direction: column;
