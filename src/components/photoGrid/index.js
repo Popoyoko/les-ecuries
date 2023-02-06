@@ -16,9 +16,9 @@ function Photo_Grid() {
     { photo: image_desktop_6, alt: "image_grid" },
   ];
   return (
-    <div className="photo-grid">
+    <div className="photo-grid" itemProp="photogrid">
       {PhotoGrid.map((id) => (
-        <div key={id}>
+        <div key={id} itemProp="photo">
           <img src={id.photo} alt={id.alt} />
         </div>
       ))}

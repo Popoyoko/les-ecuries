@@ -6,6 +6,7 @@ const Button = ({ children, href, secondary, icon, action, ...rest }) => {
     return (
       <a className="buttonlink" href={href} {...rest}>
         <button
+        itemProp="button"
           className={classNames(
             "button",
             { secondary: secondary },
@@ -19,6 +20,7 @@ const Button = ({ children, href, secondary, icon, action, ...rest }) => {
   } else {
     return (
       <button
+      itemProp="linked-button"
         {...rest}
         className={classNames(
           "button",

@@ -10,16 +10,16 @@ const Header = () => {
   const Modal = () => {
     return (
       <AppModal isOpen={isAppModal} onRequestClose={() => setAppModal(false)}>
-        <p>Nous ne pouvons prendre aucune réservation par téléphone.</p>
+        <p itemProp="reservation">Nous ne pouvons prendre aucune réservation par téléphone.</p>
         <Button href="https://pro.guestonline.fr/instabook/bookings/1kATjqd">
           Réservation en ligne
         </Button>
-        <p>
+        <p itemProp="information">
           Pour tout autre information <b>(hors réservations)</b>:
         </p>
         <Button secondary href={"tel:0664540974"}>
           07 64 54 09 74
-          <img src={icon_telephone} alt="logo_contactez-nous" />
+          <img src={icon_telephone} alt="logo_contactez-nous" itemProp="phone"/>
         </Button>
         <Button secondary href="mailto:lesecuriesbar@gmail.com">
           lesecuriesbar@gmail.com

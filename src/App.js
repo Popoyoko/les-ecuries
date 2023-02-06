@@ -55,7 +55,7 @@ const Buttons = () => (
 const App = () => {
   const isMobile = useMatchMedia("(max-width:700px)");
   return (
-    <div className="App">
+    <div className="App" itemScope itemType="https://schema.org/Service">
       <Header />
       {isMobile ? (
         <>
