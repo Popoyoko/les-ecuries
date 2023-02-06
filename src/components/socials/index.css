@@ -13,6 +13,7 @@ body {
   gap: 128px;
   padding: 128px;
   margin: 0 auto;
+  max-width: 1400px;
 }
 
 section {
