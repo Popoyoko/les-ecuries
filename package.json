@@ -51,12 +51,12 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Popoyoko/LesEcuries.git"
+    "url": "git+https://github.com/Popoyoko/les-ecuries.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Popoyoko/LesEcuries/issues"
+    "url": "https://github.com/Popoyoko/les-ecuries/issues"
   },
   "devDependencies": {
     "eslint": "^8.28.0",
