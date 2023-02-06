@@ -2,7 +2,7 @@
   "name": "les-ecuries",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://popoyoko.github.io/les-ecuries/",
+  "homepage": "https://popoyoko.github.io/les-ecuries",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
