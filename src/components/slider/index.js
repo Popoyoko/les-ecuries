@@ -31,7 +31,7 @@ const Slider = () => {
     );
   }, []);
 
-  const [item, setItem] = useState(2);
+  const [item, setItem] = useState(0);
 
   const incrementItem = () => {
     swiperRef.current?.slideNext();

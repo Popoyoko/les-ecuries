@@ -1,16 +1,45 @@
 [{
-    "name":"image_coktail.png",
-    "title":"LES COCKTAILS SONT NOTRE IDENTITÉ",
-    "description":"Un bar animé, un comptoir en bois foncé et un éclairage tamisé. Des verres de bière posés sur le comptoir, chacun rempli à ras bord d'une mousse épaisse et dorée."
+    "title":"Ambiance générale",
+    "description":"Pour passer boire un verre ou réserver un espace pour un évènement, les écuries est un lieu où l'on fait la fête comme chez soi."
 },
 {
-    "name":"image_dj.png",
-    "title":"UN DJ ENFLAMMÉ",
-    "description":"Bondé et animé, avec un DJ qui se tient derrière un ensemble de platines de mixage. "
+    "title":"DJ, Vinyles & Ambiance musicale",
+    "description":"Une programmation musicale avec ses DJ sets: ambiance disco / funk / house, un vrai warm up parfait pour danser et ambiancer l'apéro."
 },
 {
-    "name":"image_food.png",
-    "title":"UNE BURGER GARNI SUBLIMÉ",
-    "description":"Un hamburger généreux et appétissant. On peut imaginer que c'est un plat parfait pour accompagner une soirée entre amis ou pour se régaler après une longue journée de travail."
+    "title":"Alcôves / Salons privatisés",
+    "description":"Alcôves ou salons privatisés, réservez un espace pour fêter vos anniversaires, pots de départ, réunions amicales ou événements d'entreprises."
+},
+{
+    "title":"Peintures & Fresques murales",
+    "description":"Une décoration unique et atypique, avec un mobilier de récup' entre street art, peinture et photographie dans chaque pièce du bar."
+},
+{
+    "title":"Tapas & Restauration",
+    "description":"Une sélection de planche charcuterie & fromage et des assortiments snack et finger food à grignoter pour l'apéro. Parfait à partager entre amis."
+},
+{
+    "title":"Cocktails",
+    "description":"En plein quartier de montorgueil, un bar à cocktails avec une sélection allant des cocktails classiques à des créations sur mesure, avec ou sans alcool."
+},
+{
+    "title":"Bières",
+    "description":"Une sélection de bières à prix doux, entre bières de brasseur & bière de soif, IPA et blanche."
+},
+{
+    "title":"Staff",
+    "description":"Un accueil chaleureux, une équipe aux petits soins, toujours souriante et dans une bonne ambiance."
+},
+{
+    "title":"L'extérieur, en plein quartier Montorgueuil",
+    "description":"Un des quartiers les plus central et cool de Paris, proche des métros Les Halles, Etienne Marcel, et Sentier, à deux pas de Grand Boulevard et du Louvre, en plein cœur du 2ème arrondissement."
+},
+{
+    "title":"Évènements culturels, programmation",
+    "description":"Evénements associatifs, stand up, concerts & DJ sets: une programmation riche et variée à l'image de la ville"
+},
+{
+    "title":"Vins & Planches",
+    "description":"Une sélection vin idéale pour accompagner nos planches de charcuterie fromage, entre classiques & vin nature."
 }]
 
