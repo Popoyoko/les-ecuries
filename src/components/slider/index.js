@@ -18,30 +18,38 @@ const Slider = () => {
   const swiperRef = useRef();
 
   const [images, setImages] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [item, setItem] = useState(0);
 
   useEffect(() => {
-    const importAll = async (r) => {
-      r.keys().forEach(async (key) => {
-        const img = await r(key);
-        setImages((images) => [...images, img]);
-      });
+    const importAll = async () => {
+      const context = require.context(
+        "../../assets/slider/",
+        false,
+        /\.(png|jpe?g|svg)$/
+      );
+      const images = await Promise.all(
+        context.keys().map(async (key) => {
+          return await context(key);
+        })
+      );
+      setImages(images);
+      setLoading(false);
     };
-    importAll(
-      require.context("../../assets/slider/", false, /\.(png|jpe?g|svg)$/)
-    );
+    importAll();
   }, []);
-
-  const [item, setItem] = useState(0);
 
   const incrementItem = () => {
     swiperRef.current?.slideNext();
-    item < sliderimage.length - 1 ? setItem(item + 1) : setItem(0);
   };
 
   const decrementItem = () => {
     swiperRef.current?.slidePrev();
-    item > 0 ? setItem(item - 1) : setItem(sliderimage.length - 1);
   };
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
@@ -54,14 +62,16 @@ const Slider = () => {
           modules={[Pagination]}
           spaceBetween={20}
           slidesPerView={1}
-          // navigation
-
-          onBeforeInit={(swiper) => {
-            swiperRef.current = swiper;
+          onSlideChange={(swiper) => {
+            setItem(swiper.activeIndex);
           }}
+          // navigation
           navigation={{
             nextEl: ".swiper-next",
             prevEl: ".swiper-prev",
+          }}
+          onBeforeInit={(swiper) => {
+            swiperRef.current = swiper;
           }}
         >
           {images.map((image, index) => {
