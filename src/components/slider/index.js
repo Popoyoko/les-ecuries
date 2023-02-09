@@ -50,6 +50,9 @@ const Slider = () => {
   if (loading) {
     return <div>Loading...</div>;
   }
+  if (!images.length) {
+    return <div>Aucune image disponible</div>;
+  }
 
   return (
     <>
