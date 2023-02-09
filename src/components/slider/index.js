@@ -86,8 +86,9 @@ const Slider = () => {
           })}
           <div className="footer">
             <div className="infos">
-              <h3 className="title">{sliderimage[item].title}</h3>
-              <p>{sliderimage[item].description}</p>
+
+              <h3 className="title">{sliderimage[item] ? sliderimage[item].title : ""}</h3>
+              <p>{sliderimage[item] ? sliderimage[item].description : ""}</p>
             </div>
 
             <div className="navigation">
