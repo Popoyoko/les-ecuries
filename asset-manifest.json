@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/les-ecuries/static/css/main.5930e9c8.css",
-    "main.js": "/les-ecuries/static/js/main.051c2359.js",
+    "main.js": "/les-ecuries/static/js/main.13bb1e66.js",
     "static/js/787.7d740d04.chunk.js": "/les-ecuries/static/js/787.7d740d04.chunk.js",
     "static/media/02 alcove.jpg": "/les-ecuries/static/media/02 alcove.1dfdfeffc197e03b95d4.jpg",
     "static/media/03 fresque.jpg": "/les-ecuries/static/media/03 fresque.0f838cfc4ef8c1cbce27.jpg",
@@ -16,11 +16,11 @@
     "static/media/11 ambiance.jpg": "/les-ecuries/static/media/11 ambiance.e934931f3aa7118fb4b2.jpg",
     "index.html": "/les-ecuries/index.html",
     "main.5930e9c8.css.map": "/les-ecuries/static/css/main.5930e9c8.css.map",
-    "main.051c2359.js.map": "/les-ecuries/static/js/main.051c2359.js.map",
+    "main.13bb1e66.js.map": "/les-ecuries/static/js/main.13bb1e66.js.map",
     "787.7d740d04.chunk.js.map": "/les-ecuries/static/js/787.7d740d04.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5930e9c8.css",
-    "static/js/main.051c2359.js"
+    "static/js/main.13bb1e66.js"
   ]
 }
