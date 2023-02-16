@@ -1,18 +1,26 @@
 {
   "files": {
     "main.css": "/les-ecuries/static/css/main.5930e9c8.css",
-    "main.js": "/les-ecuries/static/js/main.036a23b6.js",
+    "main.js": "/les-ecuries/static/js/main.051c2359.js",
     "static/js/787.7d740d04.chunk.js": "/les-ecuries/static/js/787.7d740d04.chunk.js",
-    "static/media/02image_dj.png": "/les-ecuries/static/media/02image_dj.6c0e5abe93978e3c14a3.png",
-    "static/media/03image_food.png": "/les-ecuries/static/media/03image_food.1336e2f05221948a499b.png",
-    "static/media/01image_coktail.png": "/les-ecuries/static/media/01image_coktail.d59ac785d43d4bc41687.png",
+    "static/media/02 alcove.jpg": "/les-ecuries/static/media/02 alcove.1dfdfeffc197e03b95d4.jpg",
+    "static/media/03 fresque.jpg": "/les-ecuries/static/media/03 fresque.0f838cfc4ef8c1cbce27.jpg",
+    "static/media/08 exter.jpg": "/les-ecuries/static/media/08 exter.05371de1ddde5a88662f.jpg",
+    "static/media/05 cocktails.jpg": "/les-ecuries/static/media/05 cocktails.7139f672187e578f390c.jpg",
+    "static/media/01 dj.jpg": "/les-ecuries/static/media/01 dj.d4e1bd21ac80c08103d2.jpg",
+    "static/media/04 food.jpg": "/les-ecuries/static/media/04 food.0817d61aff1414e4385b.jpg",
+    "static/media/09 events .jpg": "/les-ecuries/static/media/09 events .6463df60279dacbdc4ce.jpg",
+    "static/media/06 bières.jpg": "/les-ecuries/static/media/06 bières.77e53b398b4f174d6f73.jpg",
+    "static/media/07 staff.jpg": "/les-ecuries/static/media/07 staff.d53aaba2579283d6a3be.jpg",
+    "static/media/10 planche.jpg": "/les-ecuries/static/media/10 planche.622924d800ea7405e0ed.jpg",
+    "static/media/11 ambiance.jpg": "/les-ecuries/static/media/11 ambiance.e934931f3aa7118fb4b2.jpg",
     "index.html": "/les-ecuries/index.html",
     "main.5930e9c8.css.map": "/les-ecuries/static/css/main.5930e9c8.css.map",
-    "main.036a23b6.js.map": "/les-ecuries/static/js/main.036a23b6.js.map",
+    "main.051c2359.js.map": "/les-ecuries/static/js/main.051c2359.js.map",
     "787.7d740d04.chunk.js.map": "/les-ecuries/static/js/787.7d740d04.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5930e9c8.css",
-    "static/js/main.036a23b6.js"
+    "static/js/main.051c2359.js"
   ]
 }
