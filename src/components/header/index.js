@@ -17,7 +17,7 @@ const Header = () => {
         <p>
           Pour tout autre information <b>(hors réservations)</b>:
         </p>
-        <Button secondary href={"tel:0664540974"}>
+        <Button secondary href={"tel:0764540974"}>
           07 64 54 09 74
           <img src={icon_telephone} alt="logo_contactez-nous" />
         </Button>
