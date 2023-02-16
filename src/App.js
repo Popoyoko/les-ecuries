@@ -2,6 +2,7 @@ import useMatchMedia from "./hooks/useMatchMedia";
 
 import icon_carte from "./assets/icon_carte.png";
 import icon_facebook from "./assets/icon_facebook.png";
+import menu from "./assets/Menu-Les-Écuries-Site.pdf";
 
 import Header from "./components/header";
 import Button from "./components/button";
@@ -36,21 +37,25 @@ const TimeTable = () => (
   </div>
 );
 
-const Buttons = () => (
-  <div className="buttons">
-    <Button
-      secondary
-      href="http://lesecuries-bar.com/wp-content/uploads/2015/06/Menu-Les-E%CC%81curies-Site.pdf"
-    >
-      Notre carte
-      <img src={icon_carte} className="vector_1" alt="logo_Notre carte" />
-    </Button>
-    <Button secondary href="https://www.facebook.com/lesecuriesbar/events">
-      Programmation
-      <img src={icon_facebook} className="vector_2" alt="logo_Programmation" />
-    </Button>
-  </div>
-);
+const Buttons = () => {
+  const isMobile = useMatchMedia("(max-width:700px)");
+  return (
+    <div className="buttons">
+      <Button secondary href={menu} download={isMobile} target="blank">
+        Notre carte
+        <img src={icon_carte} className="vector_1" alt="logo_Notre carte" />
+      </Button>
+      <Button secondary href="https://www.facebook.com/lesecuriesbar/events">
+        Programmation
+        <img
+          src={icon_facebook}
+          className="vector_2"
+          alt="logo_Programmation"
+        />
+      </Button>
+    </div>
+  );
+};
 
 const App = () => {
   const isMobile = useMatchMedia("(max-width:700px)");
