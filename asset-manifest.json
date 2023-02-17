@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/les-ecuries/static/css/main.5930e9c8.css",
-    "main.js": "/les-ecuries/static/js/main.830f106f.js",
+    "main.js": "/les-ecuries/static/js/main.cd11e36d.js",
     "static/js/787.7d740d04.chunk.js": "/les-ecuries/static/js/787.7d740d04.chunk.js",
     "static/media/02 alcove.jpg": "/les-ecuries/static/media/02 alcove.1dfdfeffc197e03b95d4.jpg",
     "static/media/03 fresque.jpg": "/les-ecuries/static/media/03 fresque.0f838cfc4ef8c1cbce27.jpg",
@@ -12,16 +12,16 @@
     "static/media/09 events .jpg": "/les-ecuries/static/media/09 events .6463df60279dacbdc4ce.jpg",
     "static/media/06 bières.jpg": "/les-ecuries/static/media/06 bières.77e53b398b4f174d6f73.jpg",
     "static/media/07 staff.jpg": "/les-ecuries/static/media/07 staff.d53aaba2579283d6a3be.jpg",
-    "static/media/Menu-Les-Écuries-Site.pdf": "/les-ecuries/static/media/Menu-Les-Écuries-Site.61492e35ff52be2c3150.pdf",
     "static/media/10 planche.jpg": "/les-ecuries/static/media/10 planche.622924d800ea7405e0ed.jpg",
     "static/media/11 ambiance.jpg": "/les-ecuries/static/media/11 ambiance.e934931f3aa7118fb4b2.jpg",
+    "static/media/Menu-Les-Écuries-Site.pdf": "/les-ecuries/static/media/Menu-Les-Écuries-Site.2a5df51647887d36bbe9.pdf",
     "index.html": "/les-ecuries/index.html",
     "main.5930e9c8.css.map": "/les-ecuries/static/css/main.5930e9c8.css.map",
-    "main.830f106f.js.map": "/les-ecuries/static/js/main.830f106f.js.map",
+    "main.cd11e36d.js.map": "/les-ecuries/static/js/main.cd11e36d.js.map",
     "787.7d740d04.chunk.js.map": "/les-ecuries/static/js/787.7d740d04.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5930e9c8.css",
-    "static/js/main.830f106f.js"
+    "static/js/main.cd11e36d.js"
   ]
 }
