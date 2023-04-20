@@ -5,8 +5,8 @@ import Button from '../button';
 
 function Socials() {
   return (
-    <div className="socials">
-      <div className="follow">
+    <div className="socials" itemProp="social">
+      <div className="follow" itemProp="follow">
         <h2>Suivez-nous</h2>
       </div>
       <div className="socials-button">

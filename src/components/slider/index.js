@@ -56,7 +56,7 @@ const Slider = () => {
 
   return (
     <>
-      <div className="slider">
+      <div className="slider" itemProp="slider">
         <Swiper
           className="swiper"
           loop={true}
@@ -84,7 +84,7 @@ const Slider = () => {
               </SwiperSlide>
             );
           })}
-          <div className="footer">
+          <div className="footer" itemProp="description">
             <div className="infos">
               <h3 className="title">
                 {sliderimage[item] && sliderimage[item].title}
@@ -92,7 +92,7 @@ const Slider = () => {
               <p>{sliderimage[item] && sliderimage[item].description}</p>
             </div>
 
-            <div className="navigation">
+            <div className="navigation" itemProp="arrow">
               <Button className={"swiper-prev"} action={() => decrementItem()}>
                 <img src={arrow_left} alt="arrow_left" />
               </Button>
