@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5930e9c8.css",
-    "main.js": "/static/js/main.3e8b05fd.js",
+    "main.js": "/static/js/main.9a452431.js",
     "static/js/787.7d740d04.chunk.js": "/static/js/787.7d740d04.chunk.js",
     "static/media/02 alcove.jpg": "/static/media/02 alcove.1dfdfeffc197e03b95d4.jpg",
     "static/media/03 fresque.jpg": "/static/media/03 fresque.0f838cfc4ef8c1cbce27.jpg",
@@ -14,14 +14,14 @@
     "static/media/07 staff.jpg": "/static/media/07 staff.d53aaba2579283d6a3be.jpg",
     "static/media/10 planche.jpg": "/static/media/10 planche.622924d800ea7405e0ed.jpg",
     "static/media/11 ambiance.jpg": "/static/media/11 ambiance.e934931f3aa7118fb4b2.jpg",
-    "static/media/Menu-Les-Écuries-Site.pdf": "/static/media/Menu-Les-Écuries-Site.2a5df51647887d36bbe9.pdf",
+    "static/media/Menu-Les-Écuries-Site.pdf": "/static/media/Menu-Les-Écuries-Site.f2b246ecb7d741ec9db3.pdf",
     "index.html": "/index.html",
     "main.5930e9c8.css.map": "/static/css/main.5930e9c8.css.map",
-    "main.3e8b05fd.js.map": "/static/js/main.3e8b05fd.js.map",
+    "main.9a452431.js.map": "/static/js/main.9a452431.js.map",
     "787.7d740d04.chunk.js.map": "/static/js/787.7d740d04.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5930e9c8.css",
-    "static/js/main.3e8b05fd.js"
+    "static/js/main.9a452431.js"
   ]
 }
